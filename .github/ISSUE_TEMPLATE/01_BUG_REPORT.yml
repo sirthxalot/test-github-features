@@ -1,5 +1,5 @@
 name: "🩸 Bug Report"
-description:
+about: File a bug/issue
 title: "[Bug]: "
 labels: ["🩸 BUG"]
 assignees:
