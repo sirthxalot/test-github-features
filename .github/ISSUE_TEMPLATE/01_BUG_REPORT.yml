@@ -1,5 +1,6 @@
 name: "Bug Report"
-title: '[BUG] <title>'
+title: "[BUG] <title>"
+description: File a bug report
 labels: ["🩸 BUG"]
 assignees:
   - sirthxalot
