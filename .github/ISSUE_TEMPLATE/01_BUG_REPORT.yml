@@ -17,9 +17,9 @@ body:
     validations:
       required: true
   - type: textarea
-    id: description
+    id: summary
     attributes:
-      label: Description
+      label: Summary
       description: A clear and concise description of the problem
     validations:
       required: true
@@ -28,7 +28,7 @@ body:
     attributes:
       label: How to reproduce
       description: |
-        ⚠️  This is the most important part of the report ⚠️
+        ⚠️This is the most important part of the report ⚠️
         Without a way to easily reproduce your issue, there is little chance we will be able to help you and work on a fix.
         Please, take the time to show us some code and/or config that is needed for others to reproduce the problem easily.
     validations:
