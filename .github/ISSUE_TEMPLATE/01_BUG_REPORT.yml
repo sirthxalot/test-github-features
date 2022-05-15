@@ -9,7 +9,7 @@ body:
     attributes:
       value: |
         ### Reporting a Bug
-        
+
         A good bug report shouldn't leave others needing to chase you up for more information. Please try to be as detailed as possible in your report. What is your environment? What steps will reproduce the issue? What browser(s) and OS experience the problem? What would you expect to be the outcome? All these details will help people to fix any potential bugs.
 
         > If you think that you have found a security issue, don't use the issue tracker and don't publish it publicly. Read our [security advisory](../SECURITY.md) instead.
@@ -17,6 +17,7 @@ body:
     id: affected-versions
     attributes:
       label: Version
+      description: The affected version of the software
       placeholder: x.y.z
     validations:
       required: true
@@ -24,7 +25,7 @@ body:
     id: summary
     attributes:
       label: Summary
-      description: A clear and concise description of the problem
+      description: A clear and concise description of the problem. What happend? And what do you expect to happen?
     validations:
       required: true
   - type: textarea
@@ -49,3 +50,15 @@ body:
     attributes:
       label: Additional Context
       description: "Optional: any other context about the problem: log messages, screenshots, etc."
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      description: Stuff you will need to do before submitting the issue.
+      options:
+        - label: I agree to follow this project's Code of Conduct.
+          required: true
+        - label: I have used the GitHub issue search to check if the issue has already been reported.
+          required: true
+        - label: I have tried to reproduce the issue using the latest `main` or development branch in the repository.
+          required: true
