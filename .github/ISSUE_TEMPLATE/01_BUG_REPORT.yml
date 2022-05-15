@@ -1,6 +1,6 @@
 name: "Bug Report"
 title: "[BUG] <title>"
-description: File a bug report
+description: A bug is a demonstrable problem that is caused by the code in the repository. Good bug reports are extremely helpful - thank you!
 labels: ["🩸 BUG"]
 assignees:
   - sirthxalot
@@ -8,7 +8,7 @@ body:
   - type: input
     id: affected-versions
     attributes:
-      label: Symfony version(s) affected
+      label: Version
       placeholder: x.y.z
     validations:
       required: true
@@ -27,9 +27,6 @@ body:
         ⚠️  This is the most important part of the report ⚠️
         Without a way to easily reproduce your issue, there is little chance we will be able to help you and work on a fix.
         Please, take the time to show us some code and/or config that is needed for others to reproduce the problem easily.
-        Most of the time, creating a "bug reproducer" as explained in the URL below is the best way to help us
-        and increases the chances someone will have a look at it:
-        https://symfony.com/doc/current/contributing/code/reproducer.html
     validations:
       required: true
   - type: textarea
