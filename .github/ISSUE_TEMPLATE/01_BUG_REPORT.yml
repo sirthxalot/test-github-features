@@ -1,5 +1,7 @@
+---
 name: "Bug Report"
-title: "[Bug]: "
+about: File a bug/issue
+title: '[BUG] <title>'
 labels: ["🩸 BUG"]
 assignees:
   - sirthxalot
@@ -43,3 +45,4 @@ body:
     attributes:
       label: Additional Context
       description: "Optional: any other context about the problem: log messages, screenshots, etc."
+---
