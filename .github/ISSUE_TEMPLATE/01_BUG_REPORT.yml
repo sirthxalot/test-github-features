@@ -5,6 +5,14 @@ labels: ["🩸 BUG"]
 assignees:
   - sirthxalot
 body:
+  - type: markdown
+    attributes:
+      value: |
+        ### Reporting Guidelines
+
+        1. **Use the GitHub issue search** — check if the issue has already been reported.
+        2. **Check if the issue has been fixed** — try to reproduce it using the latest `main` or development branch in the repository.
+        3. **Isolate the problem** — ideally create a [reduced test case](https://css-tricks.com/reduced-test-cases/) and a live example.
   - type: input
     id: affected-versions
     attributes:
