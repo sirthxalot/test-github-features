@@ -1,6 +1,6 @@
 name: 🩸 BUG REPORT
 labels: 🩸 BUG
-
+description: ""
 body:
   - type: input
     id: affected-versions
