@@ -8,7 +8,8 @@ body:
   - type: markdown
     attributes:
       value: |
-        > ⚠️**WARNING**: If you think that you have found a security issue, don't use the issue tracker and don't publish it publicly. Read our [security advisory](./../blob/main/.github/SECURITY.md) instead.
+        > ⚠️**WARNING**:
+        > If you think that you have found a security issue, don't use the issue tracker and don't publish it publicly. Read our [security advisory](./../blob/main/.github/SECURITY.md) instead.
   - type: input
     id: affected-versions
     attributes:
