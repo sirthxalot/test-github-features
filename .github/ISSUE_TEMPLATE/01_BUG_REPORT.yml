@@ -9,7 +9,8 @@ body:
     attributes:
       value: |
         > ⚠️**WARNING**:
-        > If you think that you have found a security issue, don't use the issue tracker and don't publish it publicly. Read our [security advisory](./../blob/main/.github/SECURITY.md) instead.
+        > If you think that you have found a security issue, don't use the issue tracker and don't publish it publicly.
+        > Read our [security advisory](./../blob/main/.github/SECURITY.md) instead.
   - type: input
     id: affected-versions
     attributes:
@@ -30,7 +31,7 @@ body:
     attributes:
       label: How to reproduce
       description: |
-        ⚠️This is the most important part of the report ⚠️
+        ‼️ This is the most important part of the report ‼️
         Without a way to easily reproduce your issue, there is little chance we will be able to help you and work on a fix.
         Please, take the time to show us some code and/or config that is needed for others to reproduce the problem easily.
     validations:
