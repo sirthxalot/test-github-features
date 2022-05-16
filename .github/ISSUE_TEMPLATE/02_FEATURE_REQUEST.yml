@@ -1,0 +1,56 @@
+name: "Request a new feature"
+title: "[FEATURE] «title»"
+description: Feature requests are welcome. But take a moment to find out whether your idea fits with the scope and aims of the project.
+labels: ["🔥 FEATURE"]
+assignees:
+  - sirthxalot
+body:
+  - type: input
+    id: affected-versions
+    attributes:
+      label: Version
+      description: The affected version of the software
+      placeholder: x.y.z
+    validations:
+      required: true
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: A clear and concise description of the problem. What happend? And what do you expect to happen?
+    validations:
+      required: true
+  - type: textarea
+    id: how-to-reproduce
+    attributes:
+      label: How to reproduce
+      description: |
+        ‼️ This is the most important part of the report ‼️
+        Without a way to easily reproduce your issue, there is little chance we will be able to help you and work on a fix.
+        Please, take the time to show us some code and/or config that is needed for others to reproduce the problem easily.
+    validations:
+      required: true
+  - type: textarea
+    id: possible-solution
+    attributes:
+      label: Possible Solution
+      description: |
+        Optional: only if you have suggestions on a fix/reason for the bug
+        Don't hesitate to create a pull request with your solution, it helps get faster feedback.
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: "Optional: any other context about the problem: log messages, screenshots, etc."
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      description: Stuff you will need to do before submitting the issue.
+      options:
+        - label: I agree to follow this project's [Code of Conduct](./../blob/main/.github/CODE_OF_CONDUCT.md).
+          required: true
+        - label: I have used the GitHub issue search to check if the issue has already been reported.
+          required: true
+        - label: I have tried to reproduce the issue using the latest `main` or development branch in the repository.
+          required: true
