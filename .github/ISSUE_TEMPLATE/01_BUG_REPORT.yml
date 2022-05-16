@@ -1,5 +1,5 @@
-name: "Bug Report"
-title: "[BUG] <title>"
+name: "Report a demonstrable problem (bug)"
+title: "[BUG] «title»"
 description: A bug is a demonstrable problem that is caused by the code in the repository. Good bug reports are extremely helpful - thank you!
 labels: ["🩸 BUG"]
 assignees:
@@ -8,7 +8,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        > ⚠️**WARNING**:
+        > ⚠️**WARNING**: Don't report security vulnerabilities here!
         > If you think that you have found a security issue, don't use the issue tracker and don't publish it publicly.
         > Read our [security advisory](./../blob/main/.github/SECURITY.md) instead.
   - type: input
