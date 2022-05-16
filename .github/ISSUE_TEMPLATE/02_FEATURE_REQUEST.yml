@@ -8,7 +8,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        > ❤️ We strongly recommend to begin a [discussion](/discussions/) before open a ticket!
+        > ❤️ We strongly recommend to begin a [discussion](./discussions/) before open a ticket!
         >      It's up to you to make a strong case to convince the project's developers of the merits of this feature.
         >      Please provide as much detail and context as possible.
   - type: input
