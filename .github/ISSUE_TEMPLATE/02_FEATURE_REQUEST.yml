@@ -36,10 +36,18 @@ body:
   - type: checkboxes
     id: checklist
     attributes:
+      label: "Code Impact"
+      description: "Please check if its true"
+      options:
+        - label: "Breaks the backward compatibility"
+        - label: "Causes code deprecations"
+  - type: checkboxes
+    id: checklist
+    attributes:
       label: Checklist
       description: "Stuff you will need to do before submitting the issue."
       options:
-        - label: I agree to follow this project's [Code of Conduct](./../blob/main/.github/CODE_OF_CONDUCT.md).
+        - label: "I agree to follow this project's [Code of Conduct](./../blob/main/.github/CODE_OF_CONDUCT.md)."
           required: true
-        - label: I have used the GitHub issue search to check if the issue has already been reported.
+        - label: "I have used the GitHub issue search to check if the issue has not been reported already."
           required: true
