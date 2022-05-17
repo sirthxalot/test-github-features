@@ -3,7 +3,7 @@ title: "[FEATURE] «title»"
 description: "Feature requests are welcome. But take a moment to find out whether your idea fits with the scope and aims of the project."
 labels: ["🔥 FEATURE"]
 assignees:
-  - sirthxalot
+  - "sirthxalot"
 body:
   - type: markdown
     attributes:
@@ -14,25 +14,25 @@ body:
   - type: textarea
     id: summary
     attributes:
-      label: Summary
+      label: "Summary"
       description: "A clear and concise description of the new feature"
     validations:
       required: true
   - type: textarea
     id: benefitors
     attributes:
-      label: Benefitors
+      label: "Benefitors"
       description: "Optional: Who benefits of this feature? Where is the value?"
   - type: textarea
     id: example
     attributes:
-      label: Example
+      label: "Example"
       description: "Optional: An example of how the implementation may looks like?"
   - type: textarea
     id: additional-context
     attributes:
-      label: Additional Context
-      description: "Optional: any other context you may want to share."
+      label: "Additional Context"
+      description: "Optional: any other context you may want to share?"
   - type: checkboxes
     id: code-impact
     attributes:
@@ -40,11 +40,11 @@ body:
       options:
         - label: "Breaks the backward compatibility"
         - label: "Causes code deprecations"
-        - label: "Third party modules are required"
+        - label: "External libraries (third party modules) are required"
   - type: checkboxes
     id: checklist
     attributes:
-      label: Checklist
+      label: "Checklist"
       description: "Stuff you will need to do before submitting the issue."
       options:
         - label: "I agree to follow this project's [Code of Conduct](./../blob/main/.github/CODE_OF_CONDUCT.md)."
