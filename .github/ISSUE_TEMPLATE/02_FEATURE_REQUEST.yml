@@ -1,7 +1,7 @@
 name: "Request a new feature"
-title: "[FEATURE] «title»"
+title: "[FEATURE] «your title goes here»"
 description: "Feature requests are welcome. But take a moment to find out whether your idea fits with the scope and aims of the project."
-labels: ["🔥 FEATURE"]
+labels: ["🔥 feature"]
 assignees:
   - "sirthxalot"
 body:
