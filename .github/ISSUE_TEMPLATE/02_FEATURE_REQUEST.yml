@@ -34,7 +34,7 @@ body:
       label: Additional Context
       description: "Optional: any other context about the problem: log messages, screenshots, etc."
   - type: checkboxes
-    id: checklist
+    id: code-impact
     attributes:
       label: "Code Impact"
       description: "Please check if its true"
