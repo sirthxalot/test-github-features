@@ -40,6 +40,7 @@ body:
       options:
         - label: "Breaks the backward compatibility"
         - label: "Causes code deprecations"
+        - label: "Third party modules are required"
   - type: checkboxes
     id: checklist
     attributes:
