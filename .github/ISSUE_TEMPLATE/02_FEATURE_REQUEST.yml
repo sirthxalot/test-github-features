@@ -51,7 +51,7 @@ body:
       options:
         - label: "I agree to follow this project's [Code of Conduct](./../blob/main/.github/CODE_OF_CONDUCT.md)."
           required: true
-        - label: "I have used the GitHub issue search to check if the issue has not been reported already."
+        - label: "I have used the [GitHub issue search](./../issues/) to check if the issue has not been reported already."
           required: true
-        - label: "I have read the [Contribution Guideline](./../blob/main/.github/CONTRIBUTING.md) and agree to follow it's rules."
+        - label: "I have read the [Contribution Guideline](./../blob/main/.github/CONTRIBUTING.md) and agree to follow it's guidance."
           required: true
