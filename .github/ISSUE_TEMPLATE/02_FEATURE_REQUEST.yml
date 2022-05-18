@@ -37,10 +37,12 @@ body:
     id: code-impact
     attributes:
       label: "Code Impact"
+      description: "Optional: Choose the coding impacts and describe them in additional context, please."
       options:
         - label: "Breaks the backward compatibility."
         - label: "Causes code deprecations."
         - label: "External libraries (third party modules) are required."
+        - label: "Installing software is required."
   - type: checkboxes
     id: checklist
     attributes:
