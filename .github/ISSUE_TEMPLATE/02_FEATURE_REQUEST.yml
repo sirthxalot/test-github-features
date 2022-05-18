@@ -38,9 +38,9 @@ body:
     attributes:
       label: "Code Impact"
       options:
-        - label: "Breaks the backward compatibility"
-        - label: "Causes code deprecations"
-        - label: "External libraries (third party modules) are required"
+        - label: "Breaks the backward compatibility."
+        - label: "Causes code deprecations."
+        - label: "External libraries (third party modules) are required."
   - type: checkboxes
     id: checklist
     attributes:
@@ -50,4 +50,6 @@ body:
         - label: "I agree to follow this project's [Code of Conduct](./../blob/main/.github/CODE_OF_CONDUCT.md)."
           required: true
         - label: "I have used the GitHub issue search to check if the issue has not been reported already."
+          required: true
+        - label: "I have read the [Contribution Guideline](./../blob/main/.github/CONTRIBUTING.md) and agree to follow it's rules."
           required: true
