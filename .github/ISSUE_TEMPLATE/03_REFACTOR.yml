@@ -1,0 +1,62 @@
+name: "Request a code refactor"
+title: "[🚧] «your title goes here»"
+description: "Found something to improve within the source code? Please let us know what you would like to change."
+labels: ["🚧 refactor"]
+assignees:
+  - "sirthxalot"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### Introduction
+
+        A refactor needs to be done if the code needs to be optimized. Often refactors are used in order to increase the performance, or in order to make the code easier to read. As long as these changes don't break the backward compatibility than they can be declared as patches.
+
+        > ❤️ We strongly recommend to begin a [discussion](./../discussions/categories/ideas) before open a ticket!
+        > It's up to you to make a strong case to convince the project's developers of the merits of this feature.
+        > Please provide as much detail and context as possible - thank you!
+  - type: textarea
+    id: summary
+    attributes:
+      label: "Summary"
+      description: "A clear and concise description of the refactor:"
+    validations:
+      required: true
+  - type: textarea
+    id: benefitors
+    attributes:
+      label: "Benefitors"
+      description: "Optional: Who benefits of this refactor? Where is the value?"
+  - type: textarea
+    id: example
+    attributes:
+      label: "Example"
+      description: "Optional: An example of how the implementation may looks like?"
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: "Additional Context"
+      description: "Optional: any other context you may want to share?"
+  - type: checkboxes
+    id: code-impact
+    attributes:
+      label: "Code Impact"
+      description: "Optional: Choose the coding impacts and describe them in additional context, please."
+      options:
+        - label: "Breaks the backward compatibility."
+        - label: "Causes code deprecations."
+        - label: "Improves performance."
+        - label: "Increases code readability."
+        - label: "Follows a common convention."
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: "Checklist"
+      description: "Stuff you will need to do before submitting the issue."
+      options:
+        - label: "I agree to follow this project's [Code of Conduct](./../blob/main/.github/CODE_OF_CONDUCT.md)."
+          required: true
+        - label: "I have used the [GitHub issue search](./../issues/?q=label%3A\"🔥+feature\"+) to check if the issue has not been reported already."
+          required: true
+        - label: "I have read the [Contribution Guideline](./../blob/main/.github/CONTRIBUTING.md) and agree to follow it's guidance."
+          required: true
