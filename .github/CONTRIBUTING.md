@@ -469,7 +469,7 @@ included in the project:
 --------------------------------------------------------------------------------
 
 > ### That's it Folks!
-> Thanks for standing by and have a nice day!
+> Thanks for standing by and have a very nice day!
 >
 > Sincerely  
 > Alexander Bösch ([sirthxalot](<sta.contribution@gmail.com>))
