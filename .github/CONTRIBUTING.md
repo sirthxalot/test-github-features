@@ -13,6 +13,9 @@ the time of the developers managing and developing this open source
 project. In return, they should reciprocate that respect in addressing
 your issue or assessing patches and features.
 
+You may begin with our [Code of Conduct] in order to understand
+some rules of expected behaviour.
+
 Fundamental Terminology
 --------------------------------------------------------------------------------
 
@@ -173,14 +176,16 @@ git config --global user.email «you@example.com»
 
 ### Git Workflow
 
-There is only one branch that stores the official release history:
+Listed below you will find the branches wich builds the foundation
+of the workflow:
 
 Branch Name | Description
 :---------- |:--------------------------------------------
 `main` | Stores the official release history
+`v1.x`, `v2.x`... | Starts the next major release cycle
 
 And here you will find our topic branches which can be merged into
-the `main` branch later on:
+the `main` or release branch later on:
 
 <a href="#" id="topic-branches"></a>
 
@@ -190,6 +195,15 @@ Branch Name | Description                             | Example
 `feature/` | Branch for new features                 | `feature/«issue nr.»-«your-title»` <br /> `feature/1-your-title`
 `fix/` | Branch for bug fixes                    | `fix/«issue nr.»-«your-title»` <br /> `fix/1-your-title`
 `refactor/` | Branch for code opitmizations           | `refactor/«issue nr.»-«your-title»` <br /> `refactor/1-your-title`
+
+### Git Tags / Releases
+
+[Releases] are based on [Git tags], which mark a specific point
+in your repository's history. A tag date may be different than a
+release date since they can be created at different times. Releases
+will be published by the maintainer. Every release will be labeled
+with the full version number e.g. `v1.0.0`, `v1.0.1`... and contains
+a note about the release.
 
 EditorConfig
 --------------------------------------------------------------------------------
@@ -450,7 +464,7 @@ included in the project:
 7. [Open a pull request] with a clear title and description.
 
 > **IMPORTANT**: By submitting a patch, you agree to allow the project
-> owners to license your work under the terms of the [MIT License](./../LICENSE.md).
+> owners to license your work under the terms of the [MIT License].
 
 --------------------------------------------------------------------------------
 
@@ -459,6 +473,11 @@ included in the project:
 >
 > Sincerely  
 > Alexander Bösch ([sirthxalot](<sta.contribution@gmail.com>))
+
+<!-- some links & references... -->
+
+[code of conduct]: ./CODE_OF_CONDUCT.md
+[mit license]: ./../LICENSE.md
 
 [interactive rebase]: https://docs.github.com/en/get-started/using-git/about-git-rebase
 [git commit message guidelines]: https://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html
@@ -483,5 +502,8 @@ included in the project:
 [please ask first]: https://github.com/sirthxalot/laravel-winterfell/discussions/categories/ideas
 [fork]: https://docs.github.com/en/get-started/quickstart/fork-a-repo
 [open a pull request]: https://github.com/sirthxalot/laravel-winterfell/compare
+[github discussions]: https://github.com/sirthxalot/laravel-winterfell/discussions
 [issue tracker]: https://github.com/sirthxalot/laravel-winterfell/issues
 [orchestral's testbench]: https://packages.tools/testbench/getting-started/introduction.html#installation
+[releases]: https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases
+[git tags]: https://git-scm.com/book/en/Git-Basics-Tagging
