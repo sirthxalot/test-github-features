@@ -10,13 +10,13 @@ body:
       value: |
         ### Introduction
 
-        > ❤️ We strongly recommend to begin a [discussion](./../discussions/categories/ideas) before open a ticket!
-        > It's up to you to make a strong case to convince the project's developers of the merits of this feature.
-        > Please provide as much detail and context as possible - thank you!
-
         A feature is new functionality that has been added to the API. The keyword is new, this means that you can now do something that was not possible before. Often new features don't break the backward compatibility which means that they can be declared as minors.
 
         Enhancements on the other hand improve a current implementation of the API. So they often affect the code in a way that makes it backward incompatible. If that's the case a new major release must be declared (depending on its gravity).
+        
+        > ❤️ We strongly recommend to begin a [discussion](./../discussions/categories/ideas) before open a ticket!
+        > It's up to you to make a strong case to convince the project's developers of the merits of this feature.
+        > Please provide as much detail and context as possible - thank you!
   - type: textarea
     id: summary
     attributes:
