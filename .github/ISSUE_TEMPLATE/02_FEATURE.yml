@@ -8,9 +8,15 @@ body:
   - type: markdown
     attributes:
       value: |
+        ### Introduction
+
         > ❤️ We strongly recommend to begin a [discussion](./../discussions/categories/ideas) before open a ticket!
         > It's up to you to make a strong case to convince the project's developers of the merits of this feature.
         > Please provide as much detail and context as possible - thank you!
+
+        A feature is new functionality that has been added to the API. The keyword is new, this means that you can now do something that was not possible before. Often new features don't break the backward compatibility which means that they can be declared as minors.
+
+        Enhancements on the other hand improve a current implementation of the API. So they often affect the code in a way that makes it backward incompatible. If that's the case a new major release must be declared (depending on its gravity).
   - type: textarea
     id: summary
     attributes:
@@ -39,6 +45,7 @@ body:
       label: "Code Impact"
       description: "Optional: Choose the coding impacts and describe them in additional context, please."
       options:
+        - label: "Is enhancement."
         - label: "Breaks the backward compatibility."
         - label: "Causes code deprecations."
         - label: "External libraries (third party modules) are required."
