@@ -13,7 +13,7 @@ body:
         A refactor needs to be done if the code needs to be optimized. Often refactors are used in order to increase the performance, or in order to make the code easier to read. As long as these changes don't break the backward compatibility than they can be declared as patches.
 
         > ❤️ We strongly recommend to begin a [discussion](./../discussions/categories/ideas) before open a ticket!
-        > It's up to you to make a strong case to convince the project's developers of the merits of this feature.
+        > It's up to you to make a strong case to convince the project's developers of the merits of your idea.
         > Please provide as much detail and context as possible - thank you!
   - type: textarea
     id: summary
@@ -45,6 +45,7 @@ body:
       options:
         - label: "Breaks the backward compatibility."
         - label: "Causes code deprecations."
+        - label: "Changes directory structure."
         - label: "Improves performance."
         - label: "Increases code readability."
         - label: "Follows a common convention."
@@ -56,7 +57,7 @@ body:
       options:
         - label: "I agree to follow this project's [Code of Conduct](./../blob/main/.github/CODE_OF_CONDUCT.md)."
           required: true
-        - label: "I have used the [GitHub issue search](./../issues/?q=label%3A\"🔥+feature\"+) to check if the issue has not been reported already."
+        - label: "I have used the [GitHub issue search](./../issues/?q=label%3A\"🚧+refactor\"+) to check if the issue has not been reported already."
           required: true
         - label: "I have read the [Contribution Guideline](./../blob/main/.github/CONTRIBUTING.md) and agree to follow it's guidance."
           required: true
