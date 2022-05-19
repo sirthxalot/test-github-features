@@ -11,7 +11,7 @@ body:
         ### Introduction
 
         A bug is a demonstrable problem that is caused by the code in the repository. A bug may produce an incorrect or unexpected result, or to behave in unintended ways. This may affect your system from minimal hickups to critical errors where the system may totally shut down. Almost always you can declare a bug fix as a patch.
-        
+
         > ⚠️ If you think that you have found a **security issue**, don't use the issue tracker and don't publish it publicly.
         > Read our [security advisory](./../blob/main/.github/SECURITY.md) instead.
   - type: input
@@ -59,7 +59,7 @@ body:
       options:
         - label: "I agree to follow this project's [Code of Conduct](./../blob/main/.github/CODE_OF_CONDUCT.md)."
           required: true
-        - label: "I have used the GitHub issue search to check if the issue has not been reported already."
+        - label: "I have used the [GitHub issue search](./../issues/?q=label%3A\"🩸+bug\"+) to check if the issue has not been reported already."
           required: true
         - label: "I have tried to reproduce the issue using the latest `main` or development branch in the repository."
           required: true
