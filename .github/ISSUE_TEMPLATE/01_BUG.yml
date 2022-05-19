@@ -10,8 +10,8 @@ body:
       value: |
         ### Introduction
 
-        > ⚠️
-        > If you think that you have found a **security issue**, don't use the issue tracker and don't publish it publicly.
+        > ⚠️ If you think that you have found a **security issue**, 
+        > don't use the issue tracker and don't publish it publicly.
         > Read our [security advisory](./../blob/main/.github/SECURITY.md) instead.
 
         A bug is a demonstrable problem that is caused by the code in the repository. A bug may produce an incorrect or unexpected result, or to behave in unintended ways. This may affect your system from minimal hickups to critical errors where the system may totally shut down. Almost always you can declare a bug fix as a patch.
