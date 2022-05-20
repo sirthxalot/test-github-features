@@ -31,6 +31,8 @@ body:
     id: how-to-reproduce
     attributes:
       label: "How to reproduce"
+      description: |
+        Optional: only if you have found an error, if so this becomes a very important part of your report.
   - type: textarea
     id: possible-solution
     attributes:
