@@ -1,8 +1,10 @@
-Details
+Summary
 --------------------------------------------------------------------------------
+<!-- A clear and concise description of the pull request... -->
 
-**Version Nr**: <!-- v1.0.1 --> <br />
-**Related Tickets**: <!-- #1, #2... --> <br />
+**Version Nr**: <!-- v1.0.1 -->
+
+**Related Tickets**: <!-- #1, #2... -->
 
 Types of changes
 --------------------------------------------------------------------------------
