@@ -63,11 +63,12 @@ and contains the following translations straight out of box:
 Meet the Authors
 --------------------------------------------------------------------------------
 
-This software is the product of the following contributors:
-
 > **Note**  
-> Please leave a star in their GitHub account for showing your respect - 
-> thank you kindly!
+> If you like what you see than please leave a star (⭐) within 
+> [the repository]. Thanks to all [stargazers] that shown some 
+> love and respect - you are the bests!
+
+This software is the product of the following contributors:
 
 > **Alexander Bösch** 
 > ([sirthxalot](https://github.com/sirthxalot))  
@@ -92,5 +93,7 @@ This open-sourced software is licensed under the [MIT license](./LICENSE.md).
 [official documentation]:   https://sirthxalot.github.io/laravel-winterfell/
 [issue tracker]:            https://github.com/sirthxalot/laravel-winterfell/issues/
 [discussion forum]:         https://github.com/sirthxalot/laravel-winterfell/discussions/
+[stargazers]:               https://sirthxalot.github.io/laravel-winterfell/stargazers/
+[the repository]:           https://sirthxalot.github.io/laravel-winterfell/
 [code of conduct]:          ./.github/CODE_OF_CONDUCT.md
 [contribution guideline]:   ./.github/CONTRIBUTING.md
