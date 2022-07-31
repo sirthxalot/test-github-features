@@ -16,6 +16,14 @@ your issue or assessing patches and features.
 You may begin with our [Code of Conduct] in order to understand
 some rules of expected behaviour.
 
+> **Note**  
+> This software is not an official Laravel product nor does it have 
+> any relationship with its contributors.
+
+> **Warning**  
+> This software is not an official Laravel product nor does it have 
+> any relationship with its contributors.
+
 Fundamental Terminology
 --------------------------------------------------------------------------------
 
