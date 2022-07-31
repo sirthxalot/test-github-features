@@ -2,7 +2,7 @@
     <img src="./art/logo.svg" alt="Laravel Winterfell" width="180px" height="180px" />
 </p>
 
-> **Note**  
+> **Note** Please show some 💖  
 > If you like what you see than please leave a star (⭐) within
 > [the repository].  
 > Thanks to all [stargazers] that shown some love and respect - you are the bests!
