@@ -5,8 +5,7 @@
 > **Note**  
 > If you like what you see than please leave a star (⭐) within
 > [the repository].  
-> Thanks to all [stargazers] that shown some love and respect -  
-> you are the bests!
+> Thanks to all [stargazers] that shown some love and respect - you are the bests!
 
 Introduction
 --------------------------------------------------------------------------------
@@ -63,8 +62,7 @@ versions:
 This software uses [Laravel's localization features][laravel localization] 
 and contains the following translations straight out of box:
 
-<img src="https://flagicons.lipis.dev/flags/4x3/us.svg" alt="English" title="en" width="36" height="36" />
-<img src="https://flagicons.lipis.dev/flags/4x3/de.svg" alt="German" title="de" width="36" height="36" />
+<img src="https://flagicons.lipis.dev/flags/4x3/us.svg" alt="English" title="en" width="36" height="36" /> <img src="https://flagicons.lipis.dev/flags/4x3/de.svg" alt="German" title="de" width="36" height="36" />
 
 Meet the Authors
 --------------------------------------------------------------------------------
