@@ -2,6 +2,12 @@
     <img src="./art/logo.svg" alt="Laravel Winterfell" width="180px" height="180px" />
 </p>
 
+> **Note**  
+> If you like what you see than please leave a star (⭐) within
+> [the repository].  
+> Thanks to all [stargazers] that shown some love and respect -  
+> you are the bests!
+
 Introduction
 --------------------------------------------------------------------------------
 
@@ -63,17 +69,12 @@ and contains the following translations straight out of box:
 Meet the Authors
 --------------------------------------------------------------------------------
 
-> **Note**  
-> If you like what you see than please leave a star (⭐) within 
-> [the repository]. Thanks to all [stargazers] that shown some 
-> love and respect - you are the bests!
-
 This software is the product of the following contributors:
 
 > **Alexander Bösch** 
 > ([sirthxalot](https://github.com/sirthxalot))  
 > <sta.contribution@gmail.com>  
-> <u>deutsch</u>, english
+> deutsch, english
 
 License
 --------------------------------------------------------------------------------
