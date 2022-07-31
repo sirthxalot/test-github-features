@@ -2,11 +2,6 @@
     <img src="./art/logo.svg" alt="Laravel Winterfell" width="180px" height="180px" />
 </p>
 
-> **Note** Please show some 💖  
-> If you like what you see than please leave a star (⭐) within
-> [the repository].  
-> Thanks to all [stargazers] that shown some love and respect - you are the bests!
-
 Introduction
 --------------------------------------------------------------------------------
 
@@ -20,6 +15,9 @@ A starter kit build on top of [Tailwind CSS], [Alpine.js] and
 [Livewire]. It also uses the latest technologies like [Vite] for 
 example - a superfast and modern way to build assets for Laravel 
 applications.
+
+Screenshots
+--------------------------------------------------------------------------------
 
 Getting Started
 --------------------------------------------------------------------------------
@@ -45,6 +43,10 @@ interested in helping out and there are plenty of ways you can help!
 But, in order to be a part of our community you must follow and respect 
 our [code of conduct] and [contribution guideline].
 
+If you like this software or want to show some props than please 
+[leave a star (⭐)]. Thanks to all [stargazers] that shown some 
+love and respect - you are the bests!
+
 Software Compatibility
 --------------------------------------------------------------------------------
 
@@ -53,9 +55,9 @@ Software Compatibility
 This software is compatible with the following Laravel & PHP 
 versions:
 
-**Version**         | **Laravel** | **PHP**
-:------------------ |:------------| :--------------
-`^1.0`              | `^9.0`      | `^8.0.2`
+| **Version** | **Laravel Framework** | **PHP**    |
+|:------------|:----------------------|:-----------|
+|  `^1.0`     | `^9.0`                | `^8.0.2`   |
 
 ### Localization
 
@@ -93,6 +95,6 @@ This open-sourced software is licensed under the [MIT license](./LICENSE.md).
 [issue tracker]:            https://github.com/sirthxalot/laravel-winterfell/issues/
 [discussion forum]:         https://github.com/sirthxalot/laravel-winterfell/discussions/
 [stargazers]:               https://sirthxalot.github.io/laravel-winterfell/stargazers/
-[the repository]:           https://sirthxalot.github.io/laravel-winterfell/
+[leave a star (⭐)]:         https://sirthxalot.github.io/laravel-winterfell/
 [code of conduct]:          ./.github/CODE_OF_CONDUCT.md
 [contribution guideline]:   ./.github/CONTRIBUTING.md
