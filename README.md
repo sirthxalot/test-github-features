@@ -16,6 +16,12 @@ A starter kit build on top of [Tailwind CSS], [Alpine.js] and
 example - a superfast and modern way to build assets for Laravel 
 applications.
 
+> **Note**
+> This is a note
+
+> **Warning**
+> This is a warning
+
 Screenshots
 --------------------------------------------------------------------------------
 
