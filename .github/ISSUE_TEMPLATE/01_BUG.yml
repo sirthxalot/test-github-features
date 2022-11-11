@@ -1,24 +1,6 @@
 name: "Report an issue (bug) you are experiencing with our software."
 title: "[BUG] «your title goes here»"
-description: | 
-  A bug is a demonstrable problem that is caused by the code in the repository. 
-  Basically it is an error, flaw or fault in the design, development, or operation 
-  of the software that causes it to produce an incorrect or unexpected result, 
-  or to behave in unintended ways.
-  
-  A good bug report shouldn't leave others needing to chase you up for more 
-  information. Please try to be as detailed as possible in your report. What is 
-  your environment? What steps will reproduce the issue? What browser(s) and OS 
-  experience the problem? What would you expect to be the outcome? All these details 
-  will help people to fix any potential bugs.
-
-  Remember, bug reports are created in the hope that others with the same problem 
-  will be able to collaborate with you on solving it. Do not expect that the bug 
-  report will automatically see any activity or that others will jump to fix it. 
-  Creating a bug report serves to help yourself and others start on the path of 
-  fixing the problem.
-
-  Good bug reports are extremely helpful - thank you!
+description: "A bug is a demonstrable problem that is caused by the code in the repository. Good bug reports are extremely helpful - thank you!"
 labels: ["bug"]
 assignees:
   - "sirthxalot"
@@ -28,10 +10,16 @@ body:
       value: |
         ### Introduction
 
-        A bug is a demonstrable problem that is caused by the code in the repository. A bug may produce an incorrect or unexpected result, or to behave in unintended ways. This may affect your system from minimal hickups to critical errors where the system may totally shut down. Almost always you can declare a bug fix as a patch.
-
         > ⚠️ If you think that you have found a **security issue**, don't use the issue tracker and don't publish it publicly.
         > Read our [security advisory](./../blob/main/.github/SECURITY.md) instead.
+
+        A bug is a demonstrable problem that is caused by the code in the repository. Basically it is an error, flaw or fault in the design, development, or operation of the software that causes it to produce an incorrect or unexpected result, or to behave in unintended ways.
+
+        A good bug report shouldn't leave others needing to chase you up for more information. Please try to be as detailed as possible in your report. What is your environment? What steps will reproduce the issue? What browser(s) and OS experience the problem? What would you expect to be the outcome? All these details will help people to fix any potential bugs.
+
+        Remember, bug reports are created in the hope that others with the same problem will be able to collaborate with you on solving it. Do not expect that the bug report will automatically see any activity or that others will jump to fix it. Creating a bug report serves to help yourself and others start on the path of fixing the problem.
+
+        Good bug reports are extremely helpful - thank you!
   - type: input
     id: affected-versions
     attributes:
