@@ -1,7 +1,7 @@
 name: "Report an issue (bug) you are experiencing with our software."
 title: "[BUG] «your title goes here»"
 description: "A bug is a demonstrable problem that is caused by the code in the repository. Good bug reports are extremely helpful - thank you!"
-labels: ["bug"]
+labels: ["🐙 BUG"]
 assignees:
   - "sirthxalot"
 body:
@@ -16,7 +16,7 @@ body:
 
         Good bug reports are extremely helpful - thank you!
 
-        ### ⚠️ Security Vulnerabilities
+        ### Security Vulnerabilities
 
         If you think that you have found a security issue, **do not** use the issue tracker and don't publish it publicly. 
         Read our security advisory instead.
