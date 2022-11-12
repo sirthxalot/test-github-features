@@ -72,6 +72,6 @@ body:
   - type: markdown
     attributes:
       value: |
+        ------------------------------------------------------------------------
         > ⚠️ **Warning**  
-        > **Do not** use the issue tracker to report any security vulnerability. 
-        > Please follow our security advisory instead.
+        > **Do not** use the issue tracker to report any security vulnerability. Please follow our security advisory instead.
