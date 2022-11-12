@@ -69,9 +69,9 @@ body:
           required: true
         - label: "I have tried to reproduce the issue using the latest `main` or development branch in the repository."
           required: true
- - type: markdown
-   attributes:
-     value: |
-       > ⚠️ **Warning**  
-       > **Do not** use the issue tracker to report any security vulnerability. 
-       > Please follow our security advisory instead.
+  - type: markdown
+    attributes:
+      value: |
+        > ⚠️ **Warning**  
+        > **Do not** use the issue tracker to report any security vulnerability. 
+        > Please follow our security advisory instead.
