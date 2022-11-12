@@ -10,16 +10,29 @@ body:
       value: |
         ### Introduction
 
-        > ⚠️ If you think that you have found a **security issue**, don't use the issue tracker and don't publish it publicly.
-        > Read our [security advisory](./../blob/main/.github/SECURITY.md) instead.
+        A bug is a demonstrable problem that is caused by the code in the repository. 
+        Basically it is an error, flaw or fault in the design, development, or 
+        operation of the software that causes it to produce an incorrect or 
+        unexpected result, or to behave in unintended ways.
 
-        A bug is a demonstrable problem that is caused by the code in the repository. Basically it is an error, flaw or fault in the design, development, or operation of the software that causes it to produce an incorrect or unexpected result, or to behave in unintended ways.
+        A good bug report shouldn't leave others needing to chase you up for more 
+        information. Please try to be as detailed as possible in your report. What 
+        is your environment? What steps will reproduce the issue? What browser(s) 
+        and OS experience the problem? What would you expect to be the outcome? 
+        All these details will help people to fix any potential bugs.
 
-        A good bug report shouldn't leave others needing to chase you up for more information. Please try to be as detailed as possible in your report. What is your environment? What steps will reproduce the issue? What browser(s) and OS experience the problem? What would you expect to be the outcome? All these details will help people to fix any potential bugs.
-
-        Remember, bug reports are created in the hope that others with the same problem will be able to collaborate with you on solving it. Do not expect that the bug report will automatically see any activity or that others will jump to fix it. Creating a bug report serves to help yourself and others start on the path of fixing the problem.
+        Remember, bug reports are created in the hope that others with the same 
+        problem will be able to collaborate with you on solving it. Do not expect 
+        that the bug report will automatically see any activity or that others 
+        will jump to fix it. Creating a bug report serves to help yourself and 
+        others start on the path of fixing the problem.
 
         Good bug reports are extremely helpful - thank you!
+
+        ### Security Vulnerabilities
+
+        If you think that you have found a security issue, don't use the issue 
+        tracker and don't publish it publicly. Read our security advisory instead.
   - type: input
     id: affected-versions
     attributes:
