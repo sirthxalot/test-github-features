@@ -45,17 +45,22 @@ body:
     validations:
       required: true
   - type: textarea
+    id: environment
+    attributes:
+      label: "The Environment"
+      description: "Optional: Tell us anything about your environment that may be related to the issue, e.g. browser, operation system, virtual machines..."     
+  - type: textarea
     id: possible-solution
     attributes:
       label: "Possible Solution"
       description: |
-        Optional: only if you have suggestions on a fix/reason for the bug
+        Optional: Only if you have suggestions on a fix/reason for the bug
         Don't hesitate to create a pull request with your solution, it helps get faster feedback.
   - type: textarea
     id: additional-context
     attributes:
       label: "Additional Context"
-      description: "Optional: any other context about the problem: log messages, screenshots, etc."
+      description: "Optional: Any other context about the problem: log messages, screenshots, etc."
   - type: checkboxes
     id: checklist
     attributes:
