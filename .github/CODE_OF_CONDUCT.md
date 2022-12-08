@@ -5,7 +5,7 @@ Our Pledge
 --------------------------------------------------------------------------------
 
 In the interest of fostering an open and welcoming environment,
-we as contributors and maintainers pledge to making participation
+we as contributors and maintainers pledge to create participation
 in our project and our community a harassment-free experience for
 everyone, regardless of age, body size, disability, ethnicity,
 gender identity and expression, level of experience, nationality,
@@ -61,7 +61,7 @@ Enforcement
 --------------------------------------------------------------------------------
 
 Instances of abusive, harassing, or otherwise unacceptable behavior
-may be reported by contacting the project team at <sta.contribution@gmail.com>.
+may be reported by contacting the project team at <$email$>.
 The project team will review and investigate all complaints, and
 will respond in a way that it deems appropriate to the circumstances.
 The project team is obligated to maintain confidentiality with
@@ -77,6 +77,8 @@ Attribution
 
 This Code of Conduct is adapted from the [Contributor Covenant][homepage],
 version 1.4, available at [https://contributor-covenant.org/version/1/4][version]
+
+<!--                            that's all folks!                            -->
 
 [homepage]: https://contributor-covenant.org
 [version]: https://contributor-covenant.org/version/1/4/
