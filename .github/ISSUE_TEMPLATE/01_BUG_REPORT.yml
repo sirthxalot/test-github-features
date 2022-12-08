@@ -1,7 +1,7 @@
 title: "«your title goes here»"
-name: "Report something that needs to be fixed."
-description: "A bug is a demonstrable problem that is caused by the code in the repository. Good bug reports are extremely helpful - thank you!"
-labels: ["🙊 BUG"]
+name: "Bug Report"
+description: "Report a demonstrable problem that is caused by the code in the repository."
+labels: [":speak_no_evil: BUG"]
 assignees:
   - "sirthxalot"
 body:
@@ -9,7 +9,7 @@ body:
     id: version
     attributes:
       label: "Version"
-      description: "The affected version of the software:"
+      description: "Which version is affected?"
       placeholder: "x.y.z"
     validations:
       required: true
