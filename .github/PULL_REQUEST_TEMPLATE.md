@@ -7,6 +7,8 @@ Summary
 
 <!-- A clear and concise description of the pull request... -->
 
+**Title**: <!-- your title goes here... -->
+
 **Version Nr**: <!-- v1.0.1 -->
 
 **Related Ticket(s)**: <!-- #1, #2... -->
