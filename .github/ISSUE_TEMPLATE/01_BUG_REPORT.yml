@@ -78,7 +78,7 @@ body:
       label: "Checklist"
       description: "Stuff you will need to do before submitting the issue."
       options:
-        - label: "I agree to follow this project's [Code of Conduct](./../blob/main/.github/CODE_OF_CONDUCT.md)."
+        - label: "I agree to follow this project's [code of conduct](./../blob/main/.github/CODE_OF_CONDUCT.md#contributor-covenant-code-of-conduct)."
           required: true
         - label: "I agree to follow this project's [contribution guideline](./../blob/main/.github/CONTRIBUTING.md#introduction)."
           required: true                 
