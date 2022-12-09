@@ -8,7 +8,7 @@
     - type: markdown
       attributes:
         value: |
-          **Warning**: Do not report any [security vulnerabilities](./../SECURITY.md) or 
+          **Warning**: Do not report any [security vulnerabilities](/blob/main/.github/SECURITY.md#security-policy) or 
           any personal details you don't want to share with others 
           within issues - others can read these informations aswell.
           
