@@ -84,8 +84,8 @@ body:
   - type: checkboxes
     id: code_affects
     attributes:
-      label: "Code Affects"
-      description: "Please check the affects to the current implmementation."
+      label: "Code Breakage"
+      description: "Please check the affects to the current implementation."
       options:
         - label: "Breaks the backward compatibility."
         - label: "Causes code deprecations."
