@@ -1,5 +1,5 @@
 title: "«your title goes here»"
-name: "Feature / Enhancement Request"
+name: "Feature / Enhancement"
 description: "Extend or add new functionality to the source code."
 labels: ["🐧 FEATURE"]
 assignees:
@@ -11,7 +11,12 @@ body:
         **Warning**: Feature requests are welcome. But take a moment to [find out 
         whether your idea fits with the scope and aims of the project](./../discussions/categories/ideas). 
         It's up to you to make a strong case to convince the project's 
-        developers of the merits of this feature. - thank you!
+        developers of the merits of this feature.  
+        
+        We also recommend to avoid any personal details you don't want to share 
+        with others within issues - others can read these informations aswell
+
+        Thank you!
         
         ------------------------------------------------------------------------
   - type: input
@@ -95,9 +100,10 @@ body:
       label: "Checklist"
       description: "Stuff you will need to do before submitting the issue."
       options:
-        - label: "I agree to follow this project's [Code of Conduct](./../blob/main/.github/CODE_OF_CONDUCT.md)."
+        - label: "I agree to follow this project's [ocde of conduct](./../blob/main/.github/CODE_OF_CONDUCT.md#contributor-covenant-code-of-conduct)."
           required: true
+        - label: "I agree to follow this project's [contribution guideline](./../blob/main/.github/CONTRIBUTING.md#introduction)."
+          required: true    
         - label: "I have used the [GitHub issue search](./../issues/?q=label%3A\"🐧+FEATURE\"+) to check if the issue has not been reported already."
           required: true
-        - label: "I have read the [contribution guideline](./../blob/main/.github/CONTRIBUTING.md) and agree to follow it's guidance."
-          required: true
+
