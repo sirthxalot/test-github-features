@@ -8,25 +8,10 @@
     - type: markdown
       attributes:
         value: |
-          A feature is new functionality that has been added to the API. 
-          The keyword is new, this means that you can now do something 
-          that was not possible before. Often new features don't break 
-          the backward compatibility which means that they can be 
-          declared as minors.
-
-          Enhancements on the other hand improve a current implementation 
-          of the API. So they often affect the code in a way that makes it 
-          backward incompatible. If that's the case a new major release must 
-          be declared (depending on its gravity).
-
-          **Warning**: Feature requests are welcome. But take a moment to find out 
-          whether your idea fits with the scope and aims of the project. 
+          **Warning**: Feature requests are welcome. But take a moment to [find out 
+          whether your idea fits with the scope and aims of the project](./../discussions/categories/ideas. 
           It's up to you to make a strong case to convince the project's 
-          developers of the merits of this feature. 
-
-          Please provide as much detail and context as possible and start a 
-          [discussion](./../discussions/categories/ideas) before creating the 
-          ticket - thank you!
+          developers of the merits of this feature. - thank you!
           
           ------------------------------------------------------------------------
     - type: input
@@ -37,4 +22,74 @@
         placeholder: "x.y.z"
       validations:
         required: true     
-    
+    - type: textarea
+      id: summary
+      attributes:
+        label: "Summary"
+        description: "A clear and concise description of your idea."
+      validations:
+        required: true
+    - type: textarea
+      id: value
+      attributes:
+        label: "Benefitors"
+        description: "Optional: Who benefits of this feature? Where is the value?"
+      validations:
+        required: false       
+    - type: textarea
+      id: libraries
+      attributes:
+        label: "External Libraries"
+        description: "Optional: Does this change require any other third party modules or external libraries? If so please list them here."
+        placeholder: | 
+          - [Library Name (v.1.2.3)](https://library.url)
+          - [Library Name 2 (v.1.2.3)](https://library2.url)
+          - ...
+      validations:
+        required: false     
+    - type: textarea
+      id: possible-solution
+      attributes:
+        label: "Possible Solution"
+        description: |
+          Optional: Only if you have suggestions on how the implementation may look like?
+          Don't hesitate to create a pull request with your solution, it helps get faster feedback.
+    - type: textarea
+      id: additional-context
+      attributes:
+        label: "Additional Context"
+        description: "Optional: Any other context you may want to share."
+    - type: markdown
+      attributes:
+        value: |
+          A feature is new functionality that has been added to the API. 
+          The keyword is new, this means that you can now do something 
+          that was not possible before. Often new features don't break 
+          the backward compatibility which means that they can be 
+          declared as minors.
+
+          Enhancements on the other hand improve a current implementation 
+          of the API. So they often affect the code in a way that makes it 
+          backward incompatible. If that's the case a new major release must 
+          be declared (depending on its gravity).        
+    - type: dropdown
+      attributes:
+        label: Feature or Enhancement
+        multiple: false
+        options:
+          - label: Feature
+          - label: Enhancement
+      validations:
+        required: true
+    - type: checkboxes
+      id: checklist
+      attributes:
+        label: "Checklist"
+        description: "Stuff you will need to do before submitting the issue."
+        options:
+          - label: "I agree to follow this project's [Code of Conduct](./../blob/main/.github/CODE_OF_CONDUCT.md)."
+            required: true
+          - label: "I have used the [GitHub issue search](./../issues/?q=label%3A\"🐧+FEATURE\"+) to check if the issue has not been reported already."
+            required: true
+          - label: "I have read the [contribution guideline](./../blob/main/.github/CONTRIBUTING.md) and agree to follow it's guidance."
+            required: true
