@@ -1,5 +1,5 @@
 blank_issues_enabled: true
 contact_links:
   - name: Support Question
-    url: ./../../../dicussions/
+    url: https://github.com/sirthxalot/test-github-features/dicussions/
     about: The issue trackers is not intended to provide help or support. Use GitHub discussions instead.
