@@ -5,11 +5,13 @@ labels: ["🙊 BUG"]
 assignees:
   - "sirthxalot"
 body:
-  - type: checkbox
+  - type: checkboxes
     id: is_patch
     attributes:
       label: "Patch"
-      description: "Does the bug needs to be fixed immediately (path) or not?"
+      description: "Please check if the bug needs to be fixed immediately (patch) or not."
+      options:
+        - label: "Quickfix (Patch)"
   - type: input
     id: version
     attributes:
