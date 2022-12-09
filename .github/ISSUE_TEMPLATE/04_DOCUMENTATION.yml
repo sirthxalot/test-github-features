@@ -1,25 +1,28 @@
-name: "Report documentation issues"
-title: "[📙] «your title goes here»"
+title: "«your title goes here»"
+name: "Documentation"
 description: "Report some serious issues with the documentation, e.g. browser errors or lacks of information."
-labels: ["📙 documentation"]
+labels: ["📘 DOCUMENTATION"]
 assignees:
   - "sirthxalot"
 body:
   - type: markdown
     attributes:
       value: |
-        ### Introduction
-
         We take the documentation serious. It is important that we support our community with the necessary information and the maintainers give a lot of freedom to the contributors to explain themselves. This sometimes causes missunderstandigs or lacks of informationen that needs to be corrected.
 
-        However please do not report some small things like a missing dot or a little missspelling as long as it does not disturbing you too much. Thank you for your understanding!
+        However please do not report some small things like a missing dot or a little missspelling as long as it does not disturbing you too much.
+
+        Thank you!
+        
+        ------------------------------------------------------------------------
   - type: input
     id: url
     attributes:
       label: "URL"
       description: "URL that leads to the documentation article:"
+      placeholder: "https://sirthxalot.github.com/..."
     validations:
-      required: true
+      required: true     
   - type: textarea
     id: summary
     attributes:
@@ -32,27 +35,32 @@ body:
     attributes:
       label: "How to reproduce"
       description: |
-        Optional: only if you have found an error, if so this becomes a very important part of your report.
+        📣 **This is the most important part of the report** 📣
+        Without a way to easily reproduce your issue, there is little chance we will be able to help you and work on a fix.
+        Please, take the time to show us some code and/or config that is needed for others to reproduce the problem easily.      
+    validations:
+      required: true   
   - type: textarea
     id: possible-solution
     attributes:
       label: "Possible Solution"
       description: |
-        Optional: only if you have suggestions on a fix/reason for the bug
+        Optional: Only if you have suggestions on how the implementation may look like?
         Don't hesitate to create a pull request with your solution, it helps get faster feedback.
   - type: textarea
     id: additional-context
     attributes:
       label: "Additional Context"
-      description: "Optional: any other context about the problem: log messages, screenshots, etc."
+      description: "Optional: Any other context you may want to share." 
   - type: checkboxes
     id: checklist
     attributes:
       label: "Checklist"
       description: "Stuff you will need to do before submitting the issue."
       options:
-        - label: "I agree to follow this project's [Code of Conduct](./../blob/main/.github/CODE_OF_CONDUCT.md)."
+        - label: "I agree to follow this project's [code of conduct](./../blob/main/.github/CODE_OF_CONDUCT.md#contributor-covenant-code-of-conduct)."
           required: true
-        - label: "I have used the [GitHub issue search](./../issues/?q=label%3A\"📙+documentation\"+) to check if the issue has not been reported already."
+        - label: "I agree to follow this project's [contribution guideline](./../blob/main/.github/CONTRIBUTING.md#introduction)."
+          required: true    
+        - label: "I have used the [GitHub issue search](./../issues/?q=label%3A\"🐧+FEATURE\"+) to check if the issue has not been reported already."
           required: true
-
