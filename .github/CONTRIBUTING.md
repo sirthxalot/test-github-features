@@ -248,7 +248,7 @@ General Workflow
 
 <!--                            that's all folks!                            -->
 
-[code of conduct]: ./code_of_conduct.md#contributor-covenant-code-of-conduct
+[code of conduct]: ./CODE_OF_CONDUCT.md#contributor-covenant-code-of-conduct
 [github discussion]: ./../../../discussions/
 [issue tracker]: ./../../../issues/
 [new issue]: ./../../../issues/new/choose/
