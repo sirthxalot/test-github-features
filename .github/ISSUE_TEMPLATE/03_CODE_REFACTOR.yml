@@ -11,7 +11,12 @@ body:
         **Warning**: Code optimizations are welcome. But take a moment to [find out 
         whether your idea fits with the scope and aims of the project](./../discussions/categories/ideas). 
         It's up to you to make a strong case to convince the project's 
-        developers of the merits of this feature. - thank you!
+        developers of the merits of this feature.
+
+        We also recommend to avoid any personal details you don't want to share 
+        with others within issues - others can read these informations aswell.
+
+        Thank you!
         
         ------------------------------------------------------------------------
   - type: input
