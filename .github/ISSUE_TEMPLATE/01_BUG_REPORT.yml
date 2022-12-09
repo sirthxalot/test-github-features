@@ -5,12 +5,6 @@ labels: ["🙊 BUG"]
 assignees:
   - "sirthxalot"
 body:
-  - type: markdown
-    attributes:
-      value: |
-        **Warning**: Do not report any security vulnerabilities or 
-        any personal details you don't want to share with others 
-        within issues - others can read these informations aswell.
   - type: input
     id: version
     attributes:
@@ -64,4 +58,11 @@ body:
         - label: "I have used the [GitHub issue search](./../issues/?q=label%3A\"🙊+BUG\"+) to check if the issue has not been reported already."
           required: true
         - label: "I have tried to reproduce the issue using the latest `main` or development branch in the repository."
-          required: true      
+          required: true
+  - type: markdown
+    attributes:
+      value: |
+        ------------------------------------------------------------------------
+        **Warning**: Do not report any security vulnerabilities or 
+        any personal details you don't want to share with others 
+        within issues - others can read these informations aswell.          
