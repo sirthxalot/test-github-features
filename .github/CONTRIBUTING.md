@@ -248,17 +248,10 @@ General Workflow
 
 <!--                            that's all folks!                            -->
 
-[code of conduct]: ./code_of_conduct.md
-
-[github discussion]: $project_url$/discussions/
-[📣 announcements]: $project_url$/discussions/categories/announcements
-[💬 general]: $project_url$/discussions/categories/general
-[💡 ideas]: $project_url$/discussions/categories/ideas
-[🗳️ polls]: $project_url$/discussions/categories/polls
-[🙏 question & answer]: $project_url$/discussions/categories/q-a
-[🙌 show and tell]: $project_url$/discussions/categories/show-and-tell
-[issue tracker]: $project_url$/issues/
-[new issue]: $project_url$/issues/new/choose/
+[code of conduct]: ./code_of_conduct.md#contributor-covenant-code-of-conduct
+[github discussion]: ./../../../discussions/
+[issue tracker]: ./../../../issues/
+[new issue]: ./../../../issues/new/choose/
 
 [fork]: https://docs.github.com/de/get-started/quickstart/fork-a-repo
 [git commit message guidelines]: https://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html
