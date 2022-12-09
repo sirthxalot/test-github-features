@@ -8,8 +8,18 @@ body:
   - type: markdown
     attributes:
       value: |
-        > **Warning**  
-        > Never report any security vulnerabilities or personal details you don't want to share within issues, since they can be read by other clients.
+        ⚠️ **Warning**  
+        Do not report any security vulnerabilities or 
+        any personal details you don't want to share with others 
+        within issues - others can read these informations aswell.
+  - type: input
+    id: version
+    attributes:
+      label: "Version"
+      description: "Which version is affected?"
+      placeholder: "x.y.z"
+    validations:
+      required: true
   - type: textarea
     id: summary
     attributes:
@@ -44,14 +54,6 @@ body:
     attributes:
       label: "Additional Context"
       description: "Optional: Any other context about the problem: log messages, screenshots, etc."
-  - type: input
-    id: version
-    attributes:
-      label: "Version"
-      description: "Which version is affected?"
-      placeholder: "x.y.z"
-    validations:
-      required: true      
   - type: checkboxes
     id: checklist
     attributes:
