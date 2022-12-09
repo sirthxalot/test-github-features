@@ -5,6 +5,14 @@ labels: ["🙊 BUG"]
 assignees:
   - "sirthxalot"
 body:
+  - type: markdown
+    attributes:
+      value: |
+        ------------------------------------------------------------------------
+        **Warning**: Do not report any security vulnerabilities or 
+        any personal details you don't want to share with others 
+        within issues - others can read these informations aswell.
+        ------------------------------------------------------------------------
   - type: input
     id: version
     attributes:
@@ -65,10 +73,3 @@ body:
           required: true
         - label: "I have tried to reproduce the issue using the latest `main` or development branch in the repository."
           required: true
-  - type: markdown
-    attributes:
-      value: |
-        ------------------------------------------------------------------------
-        **Warning**: Do not report any security vulnerabilities or 
-        any personal details you don't want to share with others 
-        within issues - others can read these informations aswell.          
