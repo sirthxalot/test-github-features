@@ -1,10 +1,15 @@
 title: "«your title goes here»"
 name: "Bug Report"
 description: "Report a demonstrable problem that is caused by the code in the repository."
-labels: [":speak_no_evil: BUG"]
+labels: ["🙊 BUG"]
 assignees:
   - "sirthxalot"
 body:
+  - type: markdown
+    attributes:
+      value: |
+        > **Warning**  
+        > Never report any security vulnerabilities or personal details you don't want to share within issues, since they can be read by other clients.
   - type: textarea
     id: summary
     attributes:
@@ -12,20 +17,12 @@ body:
       description: "A clear and concise description of the problem. What happend? And what do you expect to happen?"
     validations:
       required: true
-  - type: input
-    id: version
-    attributes:
-      label: "Version"
-      description: "Which version is affected?"
-      placeholder: "x.y.z"
-    validations:
-      required: true
   - type: textarea
     id: how-to-reproduce
     attributes:
       label: "How to reproduce"
       description: |
-        ‼️ This is the most important part of the report ‼️
+        📣 This is the most important part of the report 📣
         Without a way to easily reproduce your issue, there is little chance we will be able to help you and work on a fix.
         Please, take the time to show us some code and/or config that is needed for others to reproduce the problem easily.
     validations:
@@ -47,6 +44,14 @@ body:
     attributes:
       label: "Additional Context"
       description: "Optional: Any other context about the problem: log messages, screenshots, etc."
+  - type: input
+    id: version
+    attributes:
+      label: "Version"
+      description: "Which version is affected?"
+      placeholder: "x.y.z"
+    validations:
+      required: true      
   - type: checkboxes
     id: checklist
     attributes:
@@ -55,7 +60,7 @@ body:
       options:
         - label: "I agree to follow this project's [Code of Conduct](./../blob/main/.github/CODE_OF_CONDUCT.md)."
           required: true
-        - label: "I have used the [GitHub issue search](./../issues/?q=label%3A\"🩸+bug\"+) to check if the issue has not been reported already."
+        - label: "I have used the [GitHub issue search](./../issues/?q=label%3A\"🙊+BUG\"+) to check if the issue has not been reported already."
           required: true
         - label: "I have tried to reproduce the issue using the latest `main` or development branch in the repository."
           required: true      
