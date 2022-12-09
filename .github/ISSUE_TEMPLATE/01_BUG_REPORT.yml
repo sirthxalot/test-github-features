@@ -1,10 +1,15 @@
 title: "«your title goes here»"
-name: "Bug Report"
+name: "Report a bug or patch"
 description: "Report a demonstrable problem that is caused by the code in the repository."
 labels: ["🙊 BUG"]
 assignees:
   - "sirthxalot"
 body:
+  - type: checkbox
+    id: is_patch
+    attributes:
+      label: "Patch"
+      description: "Does the bug needs to be fixed immediately (path) or not?"
   - type: input
     id: version
     attributes:
@@ -12,7 +17,7 @@ body:
       description: "Which version is affected?"
       placeholder: "x.y.z"
     validations:
-      required: true
+      required: true    
   - type: textarea
     id: summary
     attributes:
