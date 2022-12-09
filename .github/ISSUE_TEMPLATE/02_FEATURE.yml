@@ -63,9 +63,9 @@
       attributes:
         label: "Feature or Enhancement?"
         multiple: false
-        options:
-          - label: "Feature"
-          - label: "Enhancement"
+      options:
+        - feature
+        - enhancement
       validations:
         required: true
     - type: markdown
