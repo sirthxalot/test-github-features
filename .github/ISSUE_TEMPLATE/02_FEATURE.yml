@@ -69,9 +69,7 @@ body:
         description: "Optional: Any other context you may want to share."
     - type: dropdown
       attributes:
-        label: Feature / Enhancement
-        description: |
-          
+        label: Feature or Enhancement
         multiple: false
         options:
           - label: Feature
