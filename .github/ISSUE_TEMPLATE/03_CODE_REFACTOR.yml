@@ -55,11 +55,12 @@ body:
   - type: checkboxes
     id: code_impact
     attributes:
-      label: "Code Impact"
+      label: "Coding Impact"
       description: "Optional: Choose the coding impacts and describe them in additional context, please."
       options:
         - label: "Affects performance."
         - label: "Affects code readability."
+        - label: "Increases maintainability."
         - label: "Follows a common convention."
   - type: checkboxes
     id: code_affects
