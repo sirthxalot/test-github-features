@@ -5,12 +5,6 @@ labels: ["🙊 BUG"]
 assignees:
   - "sirthxalot"
 body:
-  - type: checkboxes
-    id: is_patch
-    attributes:
-      label: "Quickfix (Patch)"
-      options:
-        - label: "Needs to be fixed immediately"
   - type: input
     id: version
     attributes:
@@ -53,6 +47,12 @@ body:
     attributes:
       label: "Additional Context"
       description: "Optional: Any other context about the problem: log messages, screenshots, etc."
+  - type: checkboxes
+    id: is_patch
+    attributes:
+      label: "Quickfix (Patch)"
+      options:
+        - label: "Needs to be fixed immediately"      
   - type: checkboxes
     id: checklist
     attributes:
