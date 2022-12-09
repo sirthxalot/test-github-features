@@ -29,4 +29,12 @@
           ticket - thank you!
           
           ------------------------------------------------------------------------
-   
+    - type: input
+      id: version
+      attributes:
+        label: "Version"
+        description: "Which version is affected?"
+        placeholder: "x.y.z"
+      validations:
+        required: true     
+    
