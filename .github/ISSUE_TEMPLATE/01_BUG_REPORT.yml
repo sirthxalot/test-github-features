@@ -8,10 +8,9 @@ body:
   - type: checkboxes
     id: is_patch
     attributes:
-      label: "Patch"
-      description: "Please check if the bug needs to be fixed immediately (patch) or not."
+      label: "Quickfix (Patch)"
       options:
-        - label: "Quickfix (Patch)"
+        - label: "Needs to be fixed immediately"
   - type: input
     id: version
     attributes:
