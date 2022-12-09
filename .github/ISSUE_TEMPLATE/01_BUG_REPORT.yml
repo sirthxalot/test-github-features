@@ -84,5 +84,5 @@ body:
           required: true                 
         - label: "I have used the [GitHub issue search](./../issues/?q=label%3A\"🙊+BUG\"+) to check if the issue has not been reported already."
           required: true
-          - label: "I have tried to reproduce the issue using the latest `main` or development branch in the repository."
-            required: true
+        - label: "I have tried to reproduce the issue using the latest `main` or development branch in the repository."
+          required: true
