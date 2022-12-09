@@ -78,7 +78,8 @@ body:
       options:
         - label: "I agree to follow this project's [code of conduct](./../blob/main/.github/CODE_OF_CONDUCT.md#contributor-covenant-code-of-conduct)."
           required: true
+        - label: "I agree to follow this project's [contribution guideline](./../blob/main/.github/CONTRIBUTING.md#introduction)."
+          required: true          
         - label: "I have used the [GitHub issue search](./../issues/?q=label%3A\"🐇+REFACTOR\"+) to check if the issue has not been reported already."
           required: true
-        - label: "I have read the [contribution guideline](./../blob/main/.github/CONTRIBUTING.md#introduction) and agree to follow it's guidance."
-          required: true
+
