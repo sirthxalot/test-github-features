@@ -1,75 +1,77 @@
-title: "«your title goes here»"
-name: "Bug / Patch"
-description: "Report a demonstrable problem that is caused by the code in the repository."
-labels: ["🙊 BUG"]
-assignees:
-  - "sirthxalot"
-body:
-  - type: markdown
-    attributes:
-      value: |
-        ------------------------------------------------------------------------
-        **Warning**: Do not report any security vulnerabilities or 
-        any personal details you don't want to share with others 
-        within issues - others can read these informations aswell.
-        ------------------------------------------------------------------------
-  - type: input
-    id: version
-    attributes:
-      label: "Version"
-      description: "Which version is affected?"
-      placeholder: "x.y.z"
-    validations:
-      required: true    
-  - type: textarea
-    id: summary
-    attributes:
-      label: "Summary"
-      description: "A clear and concise description of the problem. What happend? And what do you expect to happen?"
-    validations:
-      required: true
-  - type: textarea
-    id: how-to-reproduce
-    attributes:
-      label: "How to reproduce"
-      description: |
-        📣 **This is the most important part of the report** 📣
-        Without a way to easily reproduce your issue, there is little chance we will be able to help you and work on a fix.
-        Please, take the time to show us some code and/or config that is needed for others to reproduce the problem easily.
-    validations:
-      required: true
-  - type: textarea
-    id: environment
-    attributes:
-      label: "The Environment"
-      description: "Optional: Tell us anything about your environment that may be related to the issue, e.g. browser, operation system, virtual machines..."     
-  - type: textarea
-    id: possible-solution
-    attributes:
-      label: "Possible Solution"
-      description: |
-        Optional: Only if you have suggestions on a fix/reason for the bug
-        Don't hesitate to create a pull request with your solution, it helps get faster feedback.
-  - type: textarea
-    id: additional-context
-    attributes:
-      label: "Additional Context"
-      description: "Optional: Any other context about the problem: log messages, screenshots, etc."
-  - type: checkboxes
-    id: is_patch
-    attributes:
-      label: "Quickfix (Patch)"
-      options:
-        - label: "Needs to be fixed immediately - is a patch."      
-  - type: checkboxes
-    id: checklist
-    attributes:
-      label: "Checklist"
-      description: "Stuff you will need to do before submitting the issue."
-      options:
-        - label: "I agree to follow this project's [Code of Conduct](./../blob/main/.github/CODE_OF_CONDUCT.md)."
-          required: true
-        - label: "I have used the [GitHub issue search](./../issues/?q=label%3A\"🙊+BUG\"+) to check if the issue has not been reported already."
-          required: true
-        - label: "I have tried to reproduce the issue using the latest `main` or development branch in the repository."
-          required: true
+  title: "«your title goes here»"
+  name: "Bug / Patch"
+  description: "Report a demonstrable problem that is caused by the code in the repository."
+  labels: ["🙊 BUG"]
+  assignees:
+    - "sirthxalot"
+  body:
+    - type: markdown
+      attributes:
+        value: |
+          ------------------------------------------------------------------------
+          
+          **Warning**: Do not report any security vulnerabilities or 
+          any personal details you don't want to share with others 
+          within issues - others can read these informations aswell.
+          
+          ------------------------------------------------------------------------
+    - type: input
+      id: version
+      attributes:
+        label: "Version"
+        description: "Which version is affected?"
+        placeholder: "x.y.z"
+      validations:
+        required: true    
+    - type: textarea
+      id: summary
+      attributes:
+        label: "Summary"
+        description: "A clear and concise description of the problem. What happend? And what do you expect to happen?"
+      validations:
+        required: true
+    - type: textarea
+      id: how-to-reproduce
+      attributes:
+        label: "How to reproduce"
+        description: |
+          📣 **This is the most important part of the report** 📣
+          Without a way to easily reproduce your issue, there is little chance we will be able to help you and work on a fix.
+          Please, take the time to show us some code and/or config that is needed for others to reproduce the problem easily.
+      validations:
+        required: true
+    - type: textarea
+      id: environment
+      attributes:
+        label: "The Environment"
+        description: "Optional: Tell us anything about your environment that may be related to the issue, e.g. browser, operation system, virtual machines..."     
+    - type: textarea
+      id: possible-solution
+      attributes:
+        label: "Possible Solution"
+        description: |
+          Optional: Only if you have suggestions on a fix/reason for the bug
+          Don't hesitate to create a pull request with your solution, it helps get faster feedback.
+    - type: textarea
+      id: additional-context
+      attributes:
+        label: "Additional Context"
+        description: "Optional: Any other context about the problem: log messages, screenshots, etc."
+    - type: checkboxes
+      id: is_patch
+      attributes:
+        label: "Quickfix (Patch)"
+        options:
+          - label: "Needs to be fixed immediately - is a patch."      
+    - type: checkboxes
+      id: checklist
+      attributes:
+        label: "Checklist"
+        description: "Stuff you will need to do before submitting the issue."
+        options:
+          - label: "I agree to follow this project's [Code of Conduct](./../blob/main/.github/CODE_OF_CONDUCT.md)."
+            required: true
+          - label: "I have used the [GitHub issue search](./../issues/?q=label%3A\"🙊+BUG\"+) to check if the issue has not been reported already."
+            required: true
+          - label: "I have tried to reproduce the issue using the latest `main` or development branch in the repository."
+            required: true
