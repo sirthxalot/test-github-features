@@ -8,6 +8,10 @@ body:
     - type: markdown
       attributes:
         value: |
+          A feature is new functionality that has been added to the API. The keyword is new, this means that you can now do something that was not possible before. Often new features don't break the backward compatibility which means that they can be declared as minors.
+
+          Enhancements on the other hand improve a current implementation of the API. So they often affect the code in a way that makes it backward incompatible. If that's the case a new major release must be declared (depending on its gravity).
+
           **Warning**: Feature requests are welcome. But take a moment to find out 
           whether your idea fits with the scope and aims of the project. 
           It's up to you to make a strong case to convince the project's 
@@ -67,9 +71,7 @@ body:
       attributes:
         label: Feature / Enhancement
         description: |
-          A feature is new functionality that has been added to the API. The keyword is new, this means that you can now do something that was not possible before. Often new features don't break the backward compatibility which means that they can be declared as minors.
-
-          Enhancements on the other hand improve a current implementation of the API. So they often affect the code in a way that makes it backward incompatible. If that's the case a new major release must be declared (depending on its gravity).
+          
         multiple: false
         options:
           - label: Feature
