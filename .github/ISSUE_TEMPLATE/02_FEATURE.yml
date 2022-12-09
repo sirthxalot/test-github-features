@@ -1,5 +1,5 @@
-  title: "Feature «your title goes here»"
-  name: "Feature Request"
+  title: "«your title goes here»"
+  name: "Feature / Enhancement Request"
   description: "Extend or add new functionality to the source code."
   labels: ["🐧 FEATURE"]
   assignees:
@@ -42,8 +42,8 @@
         label: "External Libraries"
         description: "Optional: Does this change require any other third party modules or external libraries? If so please list them here."
         placeholder: | 
-          - [Library Name (v.1.2.3)](https://library.url)
-          - [Library Name 2 (v.1.2.3)](https://library2.url)
+          - Library Name (v.1.2.3): https://library.url
+          - Library Name 2 (v.1.2.3): https://library2.url
           - ...
       validations:
         required: false     
@@ -58,7 +58,16 @@
       id: additional-context
       attributes:
         label: "Additional Context"
-        description: "Optional: Any other context you may want to share."
+        description: "Optional: Any other context you may want to share." 
+    - type: dropdown
+      attributes:
+        label: "Feature or Enhancement?"
+        multiple: false
+        options:
+          - label: "Feature"
+          - label: "Enhancement"
+      validations:
+        required: true
     - type: markdown
       attributes:
         value: |
@@ -71,16 +80,7 @@
           Enhancements on the other hand improve a current implementation 
           of the API. So they often affect the code in a way that makes it 
           backward incompatible. If that's the case a new major release must 
-          be declared (depending on its gravity).        
-    - type: dropdown
-      attributes:
-        label: Feature or Enhancement
-        multiple: false
-        options:
-          - label: Feature
-          - label: Enhancement
-      validations:
-        required: true
+          be declared (depending on its gravity).               
     - type: checkboxes
       id: checklist
       attributes:
