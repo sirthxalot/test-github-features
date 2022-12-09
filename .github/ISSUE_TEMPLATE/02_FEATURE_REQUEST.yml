@@ -9,7 +9,7 @@ body:
     attributes:
       value: |
         **Warning**: Feature requests are welcome. But take a moment to [find out 
-        whether your idea fits with the scope and aims of the project](./../discussions/categories/ideas. 
+        whether your idea fits with the scope and aims of the project](./../discussions/categories/ideas). 
         It's up to you to make a strong case to convince the project's 
         developers of the merits of this feature. - thank you!
         
@@ -42,8 +42,8 @@ body:
       label: "External Libraries"
       description: "Optional: Does this change require any other third party modules or external libraries? If so please list them here."
       placeholder: | 
-        - Library Name (v.1.2.3): https://library.url
-        - Library Name 2 (v.1.2.3): https://library2.url
+        - Library Name (v.1.2.3) -> https://library.url
+        - Library Name 2 (v.1.2.3) -> https://library2.url
         - ...
     validations:
       required: false     
@@ -81,6 +81,14 @@ body:
         of the API. So they often affect the code in a way that makes it 
         backward incompatible. If that's the case a new major release must 
         be declared (depending on its gravity).               
+  - type: checkboxes
+    id: code_affects
+    attributes:
+      label: "Code Affects"
+      description: "Please check the affects to the current implmementation."
+      options:
+        - label: "Breaks the backward compatibility."
+        - label: "Causes code deprecations."
   - type: checkboxes
     id: checklist
     attributes:
