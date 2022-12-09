@@ -1,5 +1,5 @@
   title: "«your title goes here»"
-  name: "Bug / Patch"
+  name: "Bug / Patch Report"
   description: "Report a demonstrable problem that is caused by the code in the repository."
   labels: ["🙊 BUG"]
   assignees:
