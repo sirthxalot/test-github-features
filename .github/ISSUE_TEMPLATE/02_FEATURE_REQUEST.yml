@@ -14,7 +14,7 @@ body:
         developers of the merits of this feature.  
         
         We also recommend to avoid any personal details you don't want to share 
-        with others within issues - others can read these informations aswell
+        with others within issues - others can read these informations aswell.
 
         Thank you!
         
@@ -90,7 +90,7 @@ body:
     id: code_affects
     attributes:
       label: "Code Breakage"
-      description: "Please check the affects to the current implementation."
+      description: "Optional: Please check how this affects the current implementation."
       options:
         - label: "Breaks the backward compatibility."
         - label: "Causes code deprecations."
