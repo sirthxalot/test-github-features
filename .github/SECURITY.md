@@ -22,4 +22,4 @@ vulnerabilities will be promptly addressed.
 
 <!--                            that's all folks!                            -->
 
-[report them privately to the maintainer]: $project_url$/security/advisories/new
+[report them privately to the maintainer]: ./../../../security/advisories/new
