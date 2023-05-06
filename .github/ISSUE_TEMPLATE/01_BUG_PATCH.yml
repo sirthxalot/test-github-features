@@ -11,18 +11,18 @@ body:
         A bug is a demonstrable problem that is caused by the code in the repository.
         Good bug reports are extremely helpful - thank you!
 
-        - Please **do not** report any security vulnerabilities (read [our security policy]).
+        - Please **do not** report any security vulnerabilities (read [our security policy](./../blob/main/.github/SECURITY.md)).
 
         - Please **do not** derail or troll issues. Keep the discussion on topic and
           respect the opinions of others.
 
         - Please **do not** use the issue tracker for personal support requests
-          (use our [discussion forum]).
+          (use our [discussion forum](./../discussions)).
 
         - Please **do not** open issues or pull requests regarding third party code
             e.g. Laravel (open them in their respective repositories).
 
-        ------------------------------------------------------------------------
+        ## Report
   - type: input
     attributes:
       label: $title$ Version
