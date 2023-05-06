@@ -21,8 +21,9 @@ body:
 
         - Please **do not** open issues or pull requests regarding third party code
             e.g. Laravel (open them in their respective repositories).
-
-        ## Report
+  - type: markdown
+    attributes:
+      value: "## Environment"
   - type: input
     attributes:
       label: $title$ Version
@@ -66,6 +67,9 @@ body:
       placeholder: "MySQL 8.0.31 for macOS 13.0 on arm64 (Homebrew)"
     validations:
       required: false
+  - type: markdown
+    attributes:
+      value: "## Report"
   - type: textarea
     id: summary
     attributes:
