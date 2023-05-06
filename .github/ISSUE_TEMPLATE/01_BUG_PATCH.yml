@@ -1,26 +1,51 @@
 title: "«your title goes here»"
-name: "Bug / Patch"
+name: "Bug Report"
 description: "Report a demonstrable problem that is caused by the code in the repository."
-labels: ["🙊 BUG"]
-assignees:
-  - "sirthxalot"
+labels: ["bug"]
 body:
-  - type: markdown
-    attributes:
-      value: |
-        **Warning**: Do not report any [security vulnerabilities](./../blob/main/.github/SECURITY.md#security-policy) or 
-        any personal details you don't want to share with others 
-        within issues - others can read these informations aswell.
-        
-        ------------------------------------------------------------------------
   - type: input
-    id: version
     attributes:
-      label: "Version"
-      description: "Which version is affected?"
-      placeholder: "x.y.z"
+      label: $title$ Version
+      description: Provide the $title$ version that you are using.
+      placeholder: 1.6.1
     validations:
-      required: true    
+      required: true
+  - type: input
+    attributes:
+      label: Laravel Version
+      description: Provide the Laravel version that you are using.
+      placeholder: 10.4.1
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: PHP Version
+      description: Provide the PHP version that you are using.
+      placeholder: 8.1.4
+    validations:
+      required: true
+  - type: dropdown
+    attributes:
+      label: Redis Driver
+      options:
+        - PhpRedis
+        - Predis
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Redis Version
+      description: Provide the PhpRedis/Predis version that you are using.
+      placeholder: 3.4.1
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Database Driver & Version
+      description: If applicable, provide the database driver and version you are using.
+      placeholder: "MySQL 8.0.31 for macOS 13.0 on arm64 (Homebrew)"
+    validations:
+      required: false
   - type: textarea
     id: summary
     attributes:
@@ -35,14 +60,9 @@ body:
       description: |
         📣 **This is the most important part of the report** 📣
         Without a way to easily reproduce your issue, there is little chance we will be able to help you and work on a fix.
-        Please, take the time to show us some code and/or config that is needed for others to reproduce the problem easily.      
+        Please, take the time to show us some code and/or config that is needed for others to reproduce the problem easily.
     validations:
       required: true
-  - type: textarea
-    id: environment
-    attributes:
-      label: "The Environment"
-      description: "Optional: Tell us anything about your environment that may be related to the issue, e.g. browser, operation system, virtual machines..."     
   - type: textarea
     id: possible-solution
     attributes:
@@ -55,33 +75,16 @@ body:
     attributes:
       label: "Additional Context"
       description: "Optional: Any other context about the problem: log messages, screenshots, etc."
-  - type: dropdown
-    attributes:
-      label: "Bug or Patch?"
-      multiple: false
-      options:
-        - bugfix
-        - patch
-    validations:
-      required: true
-  - type: markdown
-    attributes:
-      value: |
-        Both bugs and patches are demonstrable problem that are caused by the code in the repository. This may produce an incorrect or unexpected result, or to behave in unintended ways. Furthermore this may also affect your system from minimal hickups to critical errors where the system may totally shut down.
-
-        Bugfixes will be done infrequent and may not be fixed until the next major release. They usually don't have a bad impact or can be fixed by a workaround for the moment.
-
-        Patches on the other hand need do be fixed as soon as possible. These "bugs" causes big troubles and may have no workaround.
   - type: checkboxes
     id: checklist
     attributes:
       label: "Checklist"
       description: "Stuff you will need to do before submitting the issue."
       options:
-        - label: "I agree to follow this project's [code of conduct](./../blob/main/.github/CODE_OF_CONDUCT.md#contributor-covenant-code-of-conduct)."
+        - label: "I agree to follow the [code of conduct](./../blob/main/.github/CODE_OF_CONDUCT.md#contributor-covenant-code-of-conduct)."
           required: true
-        - label: "I agree to follow this project's [contribution guideline](./../blob/main/.github/CONTRIBUTING.md#introduction)."
-          required: true                 
+        - label: "I agree to follow the [contribution guideline](./../blob/main/.github/CONTRIBUTING.md#introduction)."
+          required: true
         - label: "I have used the [GitHub issue search](./../issues/?q=label%3A\"🙊+BUG\"+) to check if the issue has not been reported already."
           required: true
         - label: "I have tried to reproduce the issue using the latest `main` or development branch in the repository."
