@@ -3,6 +3,12 @@ name: "Bug Report"
 description: "Report a demonstrable problem that is caused by the code in the repository."
 labels: ["bug"]
 body:
+  - type: markdown
+    attributes:
+      value: |
+        A bug is a demonstrable problem that is caused by the code in the repository. Good bug reports are extremely helpful - thank you!
+
+        Please **do not** report any security vulnerabilities nor share any personal details. This issue can be reviewed by everyone.
   - type: input
     attributes:
       label: $title$ Version
