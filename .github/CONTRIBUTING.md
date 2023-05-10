@@ -1,277 +1,325 @@
-Contributing to $PROJECT_TITLE$
+Contribution Guideline
 ================================================================================
 
-Introduction
+Chapter-01: Common Standards
 --------------------------------------------------------------------------------
 
-♥ $PROJECT_TITLE$ and want to get involved? Thanks! We're actively
-looking for folks interested in helping out and there are plenty
-of ways you can help!
+### Laravel Standards
 
-Please take a moment to review this document to make the contribution 
-process easy and effective for everyone involved.
+Before we are getting started you should be aware that this is 
+a software made for Laravel, hence we are following the common 
+Laravel standards whenever we can. 
 
-Following these guidelines helps to communicate that you respect
-the time of the developers managing and developing this open-source
-project. In return, they should reciprocate that respect in 
-addressing your issue or assessing patches and features.
+We assume that you already know how a [Laravel package] works and 
+is structured, if not checkout [Laravel package development]. 
+Alexey Mezenin has also written a must-read article about 
+[Laravels best practices]. And if you haven't already heard of 
+[PHP design patterns], you should definitely check them out too.
 
-> **Note**  
-> You may begin with our [code of conduct] in order to understand some rules of expected behaviour.
+### Versioning Scheme
 
-Discussions & Support Questions
---------------------------------------------------------------------------------
+Laravel I18n follows [Semantic Versioning 2.0.0].
 
-Please do not use the issue tracker for personal support requests 
-or other discussion topics. We use [GitHub Discussion] instead.
+When referencing Laravel I18n from your application or package, 
+you should always use a version constraint such as `^1.0`, 
+since major releases do include breaking changes. However, 
+we strive to always ensure you may update to a new major 
+release in one day.
 
-Issue Tracking
---------------------------------------------------------------------------------
+### Code Deprecations
 
-The [issue tracker] is the preferred channel for bug reports, 
-features requests and submitting pull requests, but please 
-respect the following restrictions:
+From time to time, some classes and/or methods are deprecated; 
+that happens when a feature implementation cannot be changed 
+because of backward compatibility issues, but we still want to 
+propose a "better" alternative. In that case, the old 
+implementation can be deprecated.
 
-- Please **do not** use the issue tracker for personal support requests 
-  (use [GitHub Discussion]).
+Deprecations must only be introduced on the next minor version 
+of the impacted source code. They can exceptionally be introduced 
+on previous supported versions if they are critical.
 
-- Please **do not** derail or troll issues. Keep the discussion on topic 
-  and respect the opinions of others.
+A feature is marked as deprecated by adding a `@deprecated` 
+PHPDoc to relevant classes, methods, properties, ...:
 
-- Please **do not** open issues or pull requests regarding third-party code 
-  (open them in their respective repositories).
-
-Compiled Assets
---------------------------------------------------------------------------------
-
-If you are submitting a change that will affect a compiled file, 
-such as most of the files in `resources/css` or `resources/js` 
-within the repository, do not commit the compiled files. Due to 
-their large size, they cannot realistically be reviewed by a 
-maintainer. This could be exploited as a way to inject malicious 
-code into the software. In order to defensively prevent this, 
-all compiled files will be generated and committed by the maintainers.
-
-Coding Standards
---------------------------------------------------------------------------------
-
-This project follows the **[PSR-2] coding standard** and the 
-**[PSR-4] autoloading standard**.
-
-### StyleCI
-
-Don't worry if your code styling isn't perfect! [StyleCI] will 
-automatically merge any style fixes into the repository after pull 
-requests are merged. This allows us to focus on the content of the 
-contribution and not the code style.
-
-### EditorConfig
-
-[EditorConfig] helps maintain consistent coding styles for multiple 
-developers working on the same project across various editors and 
-IDEs. The EditorConfig project consists of a file format for defining 
-coding styles and a collection of text editor plugins that enable 
-editors to read the file format and adhere to defined styles. 
-EditorConfig files are easily readable and they work nicely with 
-version control systems. Checkout the `.editorconfig` file.
-
-### Best Practices & Naming Convention
-
-If you would like to dig in deeper - then you may also check out 
-[Laravel's best practices by alexeymezenin].
-
-Documentation
---------------------------------------------------------------------------------
-
-This documentation is bundled with the project which makes it 
-available for offline reading and makes it easier to update it 
-for you.
-
-You must update or extend the documentation if you make significant 
-changes. But don't worry you will find instructions within the 
-ticket - a maintainer will instruct you.
-
-### File Structure
-
-All files can be found within the `docs/` directory. It has been 
-written in [Markdown syntax] and will be compiled by [VuePress].
-
-VuePress requires [Node.js] ([NPM]) and/or [Yarn] to build the site 
-for you. Please ensure that you are using the *latest version*.
-
-### Run Documentation
-
-Please follow these instructions to serve the documentation on 
-a local server:
-
-#### Step 01: Install NPM Dependencies
-
-Install all Node dependencies defined within the `package.json` 
-file by running the following command within your terminal:
-
-```bash
-npm install
+```php
+/**
+ * @deprecated since 1.0.0.
+ */
 ```
 
-> **Note**  
-> This needs to be done only once and it will install all dependencies into the `node_modules/` directory
+The deprecation message must indicate the version in which the 
+feature was deprecated, and whenever possible, how it was replaced:
 
-#### Step 02: Run Server
-
-Next let's start a [build-in server] to serve the site:
-
-```bash
-npm run docs:serve
+```php
+/**
+ * @deprecated since 1.0.0, use alternative() instead.
+ */
 ```
 
-> **Note**  
-> The doumentation is usally available under: [localhost:8080](http://localhost:8080) after serving it.
+A deprecation must also be triggered to help people with the 
+migration (uses [symfony/deprecation-contracts]):
 
-Testing
+```php
+trigger_deprecation(
+    'sirthxalot/laravel-i18n', '5.1', 
+    'The "%s" class is deprecated, use "%s" instead.', 
+    Deprecated::class, Replacement::class
+);
+```
+
+### Coding Style
+
+Laravel I18n follows the [PSR-2] coding standard and the [PSR-4] 
+autoloading standard.
+
+#### Laravel Pint
+
+Don't worry if your code styling isn't perfect! [Laravel Pint]
+will automatically merge any style fixes into the repository 
+after pull requests are merged. This allows us to focus on the 
+content of the contribution and not the code style.
+
+### PHP Doc
+
+PHP documentation blocks (DocBlocks) should follow [Laravels 
+PHP Doc convention].
+
+#### Since & Version
+
+Version numbers should not be prefixed (<del>`v1.0.0`</del>) 
+use the semantic versioning number e.g. `1.0.0`.
+
+All internal methods must use the `@since` Doc block tag. It
+indicates at which version the associated method became 
+available. This value does not change after it has been defined.
+
+All internal methods must use the `@version` Doc block tag after 
+something has been changed. It indicates the current version of 
+the method.
+
+#### Exceptions
+
+All internal methods must use the `@throws` Doc block tag, if 
+an exception will be thrown. It indicates whether the associated 
+element could throw a specific type of exception.
+
+#### Event Dispatches
+
+All internal methods should use the `@uses` Doc block tag, in 
+order to declare possible event dispatches.
+
+#### ToDo
+
+Some methods may perform an action like updating or creating 
+something but will not be validated for example. Use the `@todo` 
+Doc block tag to mark those elements. It indicates whether any 
+development activity should still be executed on the associated 
+element.
+
+Chapter-02: Arrangements
 --------------------------------------------------------------------------------
 
-Whenever you write a new line of code, you also potentially add 
-new bugs. To build better and more reliable applications, you 
-should test your code using both functional and unit tests.
+### Step-01: Check if work is not already in progress.
 
-- **Unit Tests**: These tests ensure that individual units of source code 
-  (e.g. a single class) behave as intended. Located in `tests/Unit/` directory.
+Before working on a change, check to see if someone else also 
+raised the topic or maybe even started working on a [pull request] 
+by [searching on GitHub] or use the [project board].
 
-- **Feature Tests**: Feature tests may test a larger portion of your code, 
-  including how several objects interact with each other or even a full 
-  HTTP request to a JSON endpoint. Generally, most of your tests should 
-  be feature tests. These types of tests provide the most confidence that 
-  your system as a whole is functioning as intended. Located within the 
-  `tests/Feature/` directory.
+If you are unsure or if you have any questions during this entire 
+process, please ask your questions on the `#ideas` category on 
+[GitHub Discussions].
 
-- **Test Cases**: Test cases can be used to group external behavior that can 
-  be reused for other tests. More about test cases can be found within 
-  the [PHPUnit documentation][PHPUnit Doc Test Cases]. Files are located 
-  within the `tests/` directory.
+### Step-02: Report an issue and wait.
 
-### Testing Frameworks
+Next you should report an issue using the [issue tracker] and 
+await for orders. Seriously you should not begin to code anything 
+before you have any warranties that it will be merged into the 
+final source code.
 
-$PROJECT_TITLE$ integrates with an independent library called 
-**[PHPUnit]** to give you a rich testing framework. This article 
-won't cover PHPUnit itself, which has its own excellent [documentation][PHPUnit Doc].
+You will find a comment (from a maintainer) within the issue, 
+that may confirm your request. Otherwise, you will get some 
+explanations why we don't support your request.
 
-We also use **[Testbench]** to cover more Laravel related test scenarios.
+### Step-03: Fork the source code.
 
-### Install Composer Dependencies
+[Fork] the source code, clone your fork, and configure the remotes:
 
-Before you can create your first test. You will need to install 
-the [Composer] dependencies (defined within the `composer.json` 
-file) by running the following command:
+```shell
+# Clone your fork of the repo into the current directory
+git clone https://github.com/<your-username>/laravel-i18n.git
 
-```bash
-composer install
+# Navigate to the newly cloned directory
+cd laravel-i18n/
+
+# Assign the original repo to a remote called "upstream"
+git remote add upstream https://github.com/sirthxalot/laravel-i18n.git
 ```
 
-### Run Tests
+If you cloned a while ago, get the latest changes from upstream:
 
-After installing the dependencies you can simply run the tests by 
-executing the following command:
+```shell
+git checkout main
+git pull upstream main
+```
 
-```bash
+### Step-04: Run tests.
+
+Now that you have installed Laravel I18n check if all test pass by 
+running the following command:
+
+```shell
 composer test
 ```
 
-This command automatically runs the test suite. Each test is a PHP 
-class ending with "Test" (e.g. `BlogControllerTest`) that lives 
-in the `tests/` directory.
+### Step-05: Create a topic branch.
 
-### Configuration & Env Variables
+Each time you want to work on a PR for a bug or on an enhancement, 
+create a topic branch:
 
-PHPUnit is configured by the `phpunit.xml.dist` file. The default 
-configuration provided by us will be enough in most cases. Read 
-the [PHPUnit documentation][PHPUnit Doc Config] to discover all 
-possible configuration options (e.g. to enable code coverage or 
-to split your test into multiple "test suites").
+```shell
+git checkout -b BRANCH_NAME main
+```
 
-General Workflow
+Or, if you want to provide a bug fix for the `2.3` branch, first 
+track the remote `2.3` branch locally, than create a new branch 
+off the `2.3` branch to work on the bug fix:
+
+```shell
+git checkout --track origin/2.3
+git checkout -b BRANCH_NAME 2.3
+```
+
+> **Note**: Use a descriptive name for your branch (`issue_XXX` 
+> where XXX is the ticket number is a good convention for bug fixes).
+
+### Step-06: Work on your code.
+
+You are now ready to work on the source code and achieve some 
+amazing stuff. But keep in mind the following:
+
+- All the code you are going to submit must be released under the MIT license;
+- Add unit or feature tests to prove that everything works;
+- Try hard to not break backward compatibility (if you must do so, try to provide 
+  a compatibility layer to support the old way) -- PRs that break backward 
+  compatibility have less chance to be merged;
+- Do atomic and logically separate commits (use the power of `git rebase` to have 
+  a clean and logical history);
+- Never fix coding standards in some existing code as it makes the code review 
+  more difficult;
+- Write good commit messages: Start by a short subject line (the first line), 
+  followed by a blank line and a more detailed description.
+
+Chapter-03: Documentation
 --------------------------------------------------------------------------------
 
-1. Start a [GitHub Discussion][💡 Ideas] and tell us about your idea.
+The documentation is bundled with the source code which makes it 
+available for offline reading and makes it easier to update it for 
+you. It has been written in [Markdown] using [VuePress 2] as site 
+generator.
 
-2. Open a [new issue][new issue] and fill-in our premade templates.
+Before you can use the documentation you must install its Node 
+dependencies:
 
-3. [Fork] the project, clone your fork, and configure the remotes.
+```shell
+npm install
+```
 
-   ```bash
-   # Clone your fork of the repo into the current directory
-   git clone https://github.com/<your-username>/$project-name$.git
-   # Navigate to the newly cloned directory
-   cd $project-name$/
-   # Assign the original repo to a remote called "upstream"
-   git remote add upstream https://github.com/$project-user$/$project-name$.git
-   ```
+Next you can start a build-in webserver to serve the documentation 
+on localhost:
 
-   > **Note**  
-   > If you cloned a while ago, get the latest changes from upstream:
-   > ```bash
-   > git checkout main
-   > git pull upstream main
-   > ```
+```shell
+npm run docs:dev
+```
 
-4. Create a new topic branch to contain your feature, change, or fix:
+Chapter-04: Testing
+--------------------------------------------------------------------------------
 
-   ```bash
-   git checkout -b <topic-branch-name>
-   ```
+Whenever you write a new line of code, you also potentially add 
+new bugs. To build better and more reliable code, you should test 
+it. This is why [PHPUnit] and [Testbench] has been implemented - 
+these frameworks assist you writing clean tests. Our testing suite 
+is usually separated into the following parts:
 
-   A few example branch names:
-   - feature-xyz
-   - patch-xyz
-   - refactor-xyz
-   - fix-xyz
-   - documentation-xyz  
+- **Unit Tests**: are located within `tests/Unit/` directory. They ensure that 
+  individual units of source code (e.g. a single class) behave as intended.
+- **Feature Tests**: are located within the `tests/Feature/` directory. These 
+  tests may check a larger portion of your code, including how several objects 
+  interact with each other or even a full HTTP request to a JSON endpoint.
+- **Test Cases**: are located within the `tests/` directory. They are meant to 
+  group external behavior that can be reused for other tests and don't do any 
+  assertions.
 
-5. Commit your changes in logical chunks. Please adhere to these 
-   [git commit message guidelines] or your code is unlikely being 
-   merged into the main project. Use Git's [interactive rebase] 
-   feature to tidy up your commits before making them public.
+Chapter-05: Submit Pull Request
+--------------------------------------------------------------------------------
 
-6. Locally merge (or rebase) the upstream development branch into 
-   your topic branch:
+### Step-01: Rebase your Pull Request.
 
-   ```bash
-   git pull [--rebase] upstream main
-   ```
+Before submitting your PR, update your branch (needed if it takes 
+you a while to finish your changes):
 
-7. Push your topic branch up to your fork:
+```shell
+git checkout 2.x
 
-   ```bash
-   git push origin <topic-branch-name>
-   ```
+git fetch upstream
 
-8. Open a [Pull Request] with a clear title and description.     
+git merge upstream/2.x
 
-<!--                            that's all folks!                            -->
+git checkout BRANCH_NAME
 
-[code of conduct]: ./CODE_OF_CONDUCT.md#contributor-covenant-code-of-conduct
-[github discussion]: ./../../../discussions/
-[issue tracker]: ./../../../issues/
-[new issue]: ./../../../issues/new/choose/
+git rebase 2.x
+```
 
+> **Note**: Replace `2.x` with the branch you selected previously 
+> (e.g. `2.3`) if you are working on a bug fix.
+
+When doing the `rebase` command, you might have to fix merge 
+conflicts. `git status` will show you the unmerged files. Resolve 
+all the conflicts, then continue the rebase:
+
+```shell
+git add ... # add resolved files
+
+git rebase --continue
+```
+
+Check that all tests still pass and push your branch remotely:
+
+```shell
+git push --force origin BRANCH_NAME
+```
+
+### Step-02: Open a Pull Request.
+
+You can now [make a pull request] on the `sirthxalot/laravel-i18n` 
+GitHub repository.
+
+The default pull request description contains a table which you 
+must fill in with the appropriate answers. This ensures that 
+contributions may be reviewed without needless feedback loops and 
+that your contributions can be included into Laravel I18n as quickly 
+as possible.
+
+<!-- -------------------------- that's all folks! -------------------------- -->
+
+[psr-2]: https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md
+[psr-4]: https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-4-autoloader.md
+[laravel pint]: https://laravel.com/docs/10.x/pint
+[laravels php doc convention]: https://laravel.com/docs/10.x/contributions#phpdoc
+[laravels best practices]: https://github.com/alexeymezenin/laravel-best-practices#contents
+[php design patterns]: https://refactoring.guru/design-patterns/php
+[laravel package]: https://laravel.com/docs/10.x/packages
+[laravel package development]: https://laravelpackage.com/
+[semantic versioning 2.0.0]: https://semver.org/
+[symfony/deprecation-contracts]: https://github.com/symfony/deprecation-contracts
 [fork]: https://docs.github.com/de/get-started/quickstart/fork-a-repo
-[git commit message guidelines]: https://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html
-[interactive rebase]: https://help.github.com/articles/about-git-rebase/
-[pull request]: https://help.github.com/articles/using-pull-requests/
-[psr-2]: https://github.com/php-fig/fig-standards/blob/master/accepted/psr-2-coding-style-guide.md
-[psr-4]: https://github.com/php-fig/fig-standards/blob/master/accepted/psr-4-autoloader.md
-
-[styleci]: https://styleci.io
-[laravel's best practices by alexeymezenin]: https://github.com/alexeymezenin/laravel-best-practices#contents
-[markdown syntax]: https://vuepress.vuejs.org/guide/markdown.html
-[vuepress]: https://vuepress.vuejs.org/
-[node.js]: https://nodejs.org/en/
-[npm]: https://www.npmjs.com/
-[yarn]: https://yarnpkg.com/
-[build-in server]: https://vuepress.vuejs.org/guide/#how-it-works
+[markdown]: https://v2.vuepress.vuejs.org/guide/markdown.html
+[vuepress 2]: https://v2.vuepress.vuejs.org/
+[testbench]: https://github.com/orchestral/testbench
 [phpunit]: https://phpunit.de/
-[phpunit doc]: https://phpunit.de/documentation.html
-[testbench]: https://packages.tools/testbench/getting-started/introduction.html
-[composer]: https://getcomposer.org
-[phpunit doc config]: https://phpunit.readthedocs.io/en/9.5/configuration.html
-[phpunit doc test cases]: https://phpunit.readthedocs.io/en/9.5/writing-tests-for-phpunit.html
-[editorconfig]: https://editorconfig.org/
+[pull request]: https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests
+
+[searching on github]: https://github.com/sirthxalot/laravel-i18n/issues?q=+is%3Aopen+
+[github discussions]: https://github.com/sirthxalot/laravel-i18n/discussions/categories/ideas
+[project board]: https://github.com/sirthxalot/laravel-i18n/projects
+[issue tracker]: https://github.com/sirthxalot/laravel-i18n/issues
+[make a pull request]: https://github.com/sirthxalot/laravel-i18n/compare
