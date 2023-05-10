@@ -105,7 +105,7 @@ element could throw a specific type of exception.
 
 #### Event Dispatches
 
-All internal methods should use the `@uses` Doc block tag, in 
+All internal methods should use the `@see` Doc block tag, in 
 order to declare possible event dispatches.
 
 #### ToDo
