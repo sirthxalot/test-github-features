@@ -26,23 +26,23 @@ body:
       value: "## Environment"
   - type: input
     attributes:
-      label: $title$ Version
-      description: Provide the $title$ version that you are using.
-      placeholder: 1.6.1
+      label: I18n Version
+      description: Provide the I18n version that you are using.
+      placeholder: 1.0.0
     validations:
       required: true
   - type: input
     attributes:
       label: Laravel Version
       description: Provide the Laravel version that you are using.
-      placeholder: 10.4.1
+      placeholder: 1.0.0
     validations:
       required: true
   - type: input
     attributes:
       label: PHP Version
       description: Provide the PHP version that you are using.
-      placeholder: 8.1.4
+      placeholder: 1.0.0
     validations:
       required: true
   - type: dropdown
@@ -57,7 +57,7 @@ body:
     attributes:
       label: Redis Version
       description: Provide the PhpRedis/Predis version that you are using.
-      placeholder: 3.4.1
+      placeholder: 1.0.0
     validations:
       required: true
   - type: input
@@ -106,7 +106,6 @@ body:
     id: checklist
     attributes:
       label: "Agreements"
-      description: "Stuff you will need to do before submitting the issue."
       options:
         - label: "I agree to follow the [code of conduct](./../blob/main/.github/CODE_OF_CONDUCT.md#contributor-covenant-code-of-conduct)."
           required: true
