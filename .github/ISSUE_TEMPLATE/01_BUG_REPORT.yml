@@ -5,7 +5,7 @@ labels: ["bug"]
 body:
   - type: markdown
     attributes:
-      value: "# ⚠️ Fehlerbericht"
+      value: "# Fehlerbericht"
   - type: markdown
     attributes:
       value: |
@@ -18,7 +18,7 @@ body:
         Detailierte Fehlerberichte sind extrem hilfreich wir Danken Ihnen für Ihre Geduld beim ausfüllen!
   - type: markdown
     attributes:
-      value: "## Bericht"
+      value: "## Informationen"
   - type: input
     id: discussions
     attributes:
@@ -46,6 +46,13 @@ body:
     attributes:
       label: "Mögliche Lösung"
       description: "Falls Sie konkrete Vorschläge haben die beim beheben des Fehlers helfen könnten, dann zögern Sie nicht dies uns mitzuteilen."
+    validations:
+      required: false
+  - type: textarea
+    id: additional-info
+    attributes:
+      label: "Weitere Informationen"
+      description: "Irgendwelche zusätzliche Informationen die Sie teilen möchten? Screenshots oder ähnliches?"
     validations:
       required: false
   - type: markdown
@@ -105,15 +112,5 @@ body:
       label: Node
       description: Die Versionsnummer von Node.js.
       placeholder: 1.0.0
-    validations:
-      required: false
-  - type: markdown
-    attributes:
-      value: ----------     
-  - type: textarea
-    id: additional-info
-    attributes:
-      label: "Weitere Informationen"
-      description: "Irgendwelche zusätzliche Informationen die Sie teilen möchten? Screenshots oder ähnliches?"
     validations:
       required: false
