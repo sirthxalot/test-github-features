@@ -1,10 +1,10 @@
-name: "⚠️ Einen Fehler melden."
+name: "Fehlerbericht"
 description: |
-  Ein Fehler (oft Bug genannt) ist eine Abweichung vom gewünschten Normalzustand.
+  Ein Fehler (oft "Bug" genannt) ist eine Abweichung vom gewünschten Normalzustand.
 
   Er entsteht, wenn der Quellcode falsch geschrieben ist, Anforderungen unklar waren oder Daten nicht richtig verarbeitet werden. Das führt dazu, dass eine Webseite oder Anwendung nicht das tut, was sie soll.
 title: "[FEHLER]: "
-labels: ["bug"]
+labels: ["⚠️ BUG"]
 type: bug
 body:
   - type: markdown
