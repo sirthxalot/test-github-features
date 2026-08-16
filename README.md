@@ -22,6 +22,22 @@ applications.
 > **Warning**
 > This is a warning
 
+* [Alexander Bösch] (👑 Entwickler)
+
+<!-- ------------------------------------------------------ -->
+
+
+[REPOSITORY]: /hug-baustoffe/homepage/
+[Alexander Bösch]:      /sirthxalot/
+[Diskussionsforum]:   /hug-baustoffe/homepage/discussions/
+[Benutzerhandbuch]: /docs/user/guide/index.md
+[Entwickler Handbuch]: /docs/dev/CONTRIBUTING.md
+[⚠️ Einen Fehlerbericht erstellen]: /hug-baustoffe/homepage/issues 
+[🛠️ Neue Funktionalität entwickeln]: /hug-baustoffe/homepage/issues
+[🚧 Bestehende Funktionalität ändern]: /hug-baustoffe/homepage/issues
+[📘 Änderungen in der Dokumentation vorschlagen]: /hug-baustoffe/homepage/issues
+
+
 Screenshots
 --------------------------------------------------------------------------------
 
