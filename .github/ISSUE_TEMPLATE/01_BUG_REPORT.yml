@@ -1,7 +1,7 @@
-name: "Bug Report"
-description: "Ein Fehler (oft Bug genannt) ist eine Abweichung vom gewünschten Normalzustand."
+name: "⚠️ Einen Fehlerbericht erstellen"
+description: "Melden Sie merkwürdiges, störendes oder unerwartetes Verhalten."
 title: "[FEHLER]: "
-labels: ["bug", "⚠️"]
+labels: ["bug"]
 body:
   - type: markdown
     attributes:
@@ -12,13 +12,82 @@ body:
         Ein Fehler (oft Bug genannt) ist eine Abweichung vom gewünschten Normalzustand.
 
         Er entsteht, wenn der Quellcode falsch geschrieben ist, Anforderungen unklar waren oder Daten nicht richtig verarbeitet werden. Das führt dazu, dass eine Webseite oder Web-App nicht das tut, was sie soll.
+
+        Detailierte Fehlerberichte sind extrem hilfreich wir Danken Ihnen für Ihre Geduld beim ausfüllen!
   - type: markdown
     attributes:
-      value: "## Versionen"
+      value: |
+        ## Versionen
+
+        Diese Informationen sollten in dem [Diskussionsforum](https://github.com/hug-baustoffe/homepage/discussions) bereitgestellt werden oder müssen zuerst Angefordert werden.
   - type: input
+    id: v-repo
     attributes:
-      label: Craft CMS
-      description: Sie finden die aktuelle Version unten im Fussbereich des Administrationsbereichs der Anwendung.
+      label: Homepage Repository
+      description: Die Versionsnummer des Repositories.
       placeholder: 1.0.0
     validations:
       required: true
+  - type: input
+    id: v-craft
+    attributes:
+      label: Craft CMS
+      description: Die Versionsnummer der Craft CMS Webanwendung.
+      placeholder: 1.0.0
+    validations:
+      required: true
+  - type: input
+    id: v-php
+    attributes:
+      label: PHP
+      description: Die Versionsnummer von PHP.
+      placeholder: 1.0.0
+    validations:
+      required: true
+  - type: input
+    id: v-docker
+    attributes:
+      label: Docker
+      description: Die Versionsnummer von Docker Entwicklungsumgebung.
+      placeholder: 1.0.0
+    validations:
+      required: false
+  - type: input
+    id: v-ddev
+    attributes:
+      label: DDev
+      description: Die Versionsnummer von DDev Entwicklungsumgebung.
+      placeholder: 1.0.0
+    validations:
+      required: false
+  - type: markdown
+    attributes:
+      value: "## Bericht"
+  - type: textarea
+    id: summary
+    attributes:
+      label: "Zusammenfassung"
+      description: "Eine kurze aber präzise Beschreibung des Problems. Was ist passiert? Was wurde erwartet was passieren sollte?"
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: "Reproduktion"
+      description: "Wie können wir das Problem nachvollziehen? Welche Schritte waren notwendig um den Fehler zu provizieren? Welche Konfigurationen wurden verwendet?"
+    validations:
+      required: true
+  - type: textarea
+    id: possible-solution
+    attributes:
+      label: "Mögliche Lösung"
+      description: "Falls Sie konkrete Vorschläge haben die beim beheben des Fehlers helfen könnten, dann zögern Sie nicht dies uns mitzuteilen."
+    validations:
+      required: false
+  - type: textarea
+    id: additional-info
+    attributes:
+      label: "Weitere Informationen"
+      description: "Irgendwelche zusätzliche Informationen die Sie teilen möchten?"
+    validations:
+      required: false
