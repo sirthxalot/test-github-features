@@ -12,3 +12,13 @@ body:
         Ein Fehler (oft Bug genannt) ist eine Abweichung vom gewünschten Normalzustand.
 
         Er entsteht, wenn der Quellcode falsch geschrieben ist, Anforderungen unklar waren oder Daten nicht richtig verarbeitet werden. Das führt dazu, dass eine Webseite oder Web-App nicht das tut, was sie soll.
+  - type: markdown
+    attributes:
+      value: "## Versionen"
+  - type: input
+    attributes:
+      label: Craft CMS
+      description: Sie finden die aktuelle Version unten im Fussbereich des Administrationsbereichs der Anwendung.
+      placeholder: 1.0.0
+    validations:
+      required: true
