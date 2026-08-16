@@ -1,7 +1,11 @@
-title: "«your title goes here»"
-name: "Bug Report"
-description: "Report a demonstrable problem that is caused by the code in the repository."
+name: "⚠️ Einen Fehler melden."
+description: |
+  Ein Fehler (oft Bug genannt) ist eine Abweichung vom gewünschten Normalzustand.
+
+  Er entsteht, wenn der Quellcode falsch geschrieben ist, Anforderungen unklar waren oder Daten nicht richtig verarbeitet werden. Das führt dazu, dass eine Webseite oder Anwendung nicht das tut, was sie soll.
+title: "[FEHLER]: "
 labels: ["bug"]
+type: bug
 body:
   - type: markdown
     attributes:
