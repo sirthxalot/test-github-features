@@ -1,5 +1,5 @@
-name: "⚠️ Einen Fehler melden."
+name: "Bug Report"
 description: "Ein Fehler (oft Bug genannt) ist eine Abweichung vom gewünschten Normalzustand."
 title: "[FEHLER]: "
-labels: ["bug"]
+labels: ["bug", "⚠️"]
 type: bug
