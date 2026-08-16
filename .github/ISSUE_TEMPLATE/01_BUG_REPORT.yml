@@ -13,7 +13,7 @@ body:
 
         Er entsteht, wenn der Quellcode falsch geschrieben ist, Anforderungen unklar waren oder Daten nicht richtig verarbeitet werden. Das führt dazu, dass eine Webseite oder Web-App nicht das tut, was sie soll.
 
-        Stellen Sie sicher das Sie sich zuerst alle Informationen im [Diskussionsforum](/discussions) einholen, bevor Sie mit dem ausfüllen des Formulars beginnen.
+        Stellen Sie sicher das Sie sich zuerst alle Informationen im [Diskussionsforum](/hug-baustoffe/homepage/discussions) einholen, bevor Sie mit dem ausfüllen des Formulars beginnen.
 
         Detailierte Fehlerberichte sind extrem hilfreich wir Danken Ihnen für Ihre Geduld beim ausfüllen!
   - type: markdown
@@ -24,7 +24,7 @@ body:
     attributes:
       label: Diskussionen
       description: Tragen Sie die eindeutige Diskussionsnummer oder mehrere in das Feld ein. Trennen Sie mehrere Diskussionsnummern mit einem Komma.
-      placeholder: #7, #8
+      placeholder: "#7, #8"
     validations:
       required: true
   - type: textarea
@@ -48,13 +48,6 @@ body:
       description: "Falls Sie konkrete Vorschläge haben die beim beheben des Fehlers helfen könnten, dann zögern Sie nicht dies uns mitzuteilen."
     validations:
       required: false
-  - type: textarea
-    id: additional-info
-    attributes:
-      label: "Weitere Informationen"
-      description: "Irgendwelche zusätzliche Informationen die Sie teilen möchten? Screenshots oder ähnliches?"
-    validations:
-      required: false
   - type: markdown
     attributes:
       value: "## Versionen"
@@ -63,7 +56,7 @@ body:
     attributes:
       label: Repository
       description: Die Versionsnummer des Repositories.
-      placeholder: 1.0.0
+      placeholder: main
     validations:
       required: true
   - type: input
@@ -71,7 +64,7 @@ body:
     attributes:
       label: Craft CMS
       description: Die Versionsnummer der Craft CMS Webanwendung.
-      placeholder: 1.0.0
+      placeholder: 5.x
     validations:
       required: true
   - type: input
@@ -79,7 +72,7 @@ body:
     attributes:
       label: PHP
       description: Die Versionsnummer von PHP.
-      placeholder: 1.0.0
+      placeholder: 8.2.0
     validations:
       required: true
   - type: input
@@ -87,14 +80,40 @@ body:
     attributes:
       label: Docker
       description: Die Versionsnummer von Docker Entwicklungsumgebung.
-      placeholder: 1.0.0
+      placeholder: 4.86.0
     validations:
       required: false
   - type: input
     id: v-ddev
     attributes:
-      label: DDev
-      description: Die Versionsnummer von DDev Entwicklungsumgebung.
+      label: DDEV
+      description: Die Versionsnummer von DDEV Entwicklungsumgebung.
       placeholder: 1.0.0
+    validations:
+      required: false
+  - type: input
+    id: v-vite
+    attributes:
+      label: Vite
+      description: Die Versionsnummer von Vite Build Tool.
+      placeholder: 1.0.0
+    validations:
+      required: false
+  - type: input
+    id: v-node
+    attributes:
+      label: Node
+      description: Die Versionsnummer von Node.js.
+      placeholder: 1.0.0
+    validations:
+      required: false
+  - type: markdown
+    attributes:
+      value: ----------     
+  - type: textarea
+    id: additional-info
+    attributes:
+      label: "Weitere Informationen"
+      description: "Irgendwelche zusätzliche Informationen die Sie teilen möchten? Screenshots oder ähnliches?"
     validations:
       required: false
